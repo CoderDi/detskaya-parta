@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header-top">
       <div class="wrapper">
-        <div class="header-top__wrapper">
+        <div class="header-top__wrapper flex">
           <div class="header-city">
             <span class="header-city__text">г. Москва</span>
             <ul class="header-city__drop">
@@ -22,7 +22,7 @@
             </ul>
           </div>
 
-          <ul class="header-top__menu">
+          <ul class="header-top__menu flex">
             <li class="header-top__menu_item"><a href="">Отзывы</a></li>
             <li class="header-top__menu_item"><a href="">Контакты</a></li>
             <li class="header-top__menu_item"><a href="">Доставка</a></li>
@@ -39,13 +39,13 @@
 
     <div class="header-bottom">
       <div class="wrapper">
-        <div class="header-bottom__wrapper">
+        <div class="header-bottom__wrapper flex">
           <a href="" class="logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
           <span class="header-bottom__address">м. Войковская <br>
             Старопетровский проезд 7А стр. 6</span>
           <form action="" class="header-search">
             <input type="text" class="input header-search__input" placeholder="Искать на сайте">
-            <input type="submit" class="submit header-search__submit" value="">
+            <input type="submit" class="header-search__submit" value="">
           </form>
           <span class="header-bottom__grafik">
             График работы
@@ -62,7 +62,7 @@
 
     <nav class="header-menu">
       <div class="wrapper">
-        <ul class="header-menu__list">
+        <ul class="header-menu__list flex">
           <li class="header-menu__item"><a href="">Парты</a></li>
           <li class="header-menu__item"><a href="">Кресла</a></li>
           <li class="header-menu__item"><a href="">Комплекты</a></li>
@@ -74,41 +74,50 @@
         </ul>
       </div>
     </nav>
-  </header>
+  </header> -->
 
-  <section class="banner">
+  <!-- <section class="banner">
     <div class="wrapper">
       <div class="banner-slider js-banner-slider">
         <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
+        <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="specials">
+  <!-- <section class="specials">
     <div class="wrapper">
-      <div class="specials-list">
+      <div class="container specials-container">
         <div class="specials-item specials-item1">
-          <img src="images/box.png" alt="" class="specials-item__img">
-          <span class="specials-item__title">Товары с бесплатной
-            доставкой</span>
+          <a href="" class="specials-item__container">
+            <img src="images/box.png" alt="" class="specials-item__img">
+            <span class="specials-item__title">Товары с <br> бесплатной <br>
+              доставкой</span>
+          </a>
         </div>
         <div class="specials-item specials-item2">
-          <img src="images/asset.png" alt="" class="specials-item__img">
-          <span class="specials-item__title">Скидки до 50%</span>
+          <a href="" class="specials-item__container">
+            <img src="images/asset.png" alt="" class="specials-item__img">
+            <span class="specials-item__title">Скидки <br> до 50%</span>
+          </a>
         </div>
         <div class="specials-item specials-item3">
-          <img src="images/asset2.png" alt="" class="specials-item__img">
-          <span class="specials-item__title">Рассрочка</span>
+          <a href="" class="specials-item__container">
+            <img src="images/asset2.png" alt="" class="specials-item__img">
+            <span class="specials-item__title">Рассрочка</span>
+          </a>
         </div>
         <div class="specials-item specials-item4">
-          <img src="images/emj.png" alt="" class="specials-item__img">
-          <span class="specials-item__title">Товар дня</span>
+          <a href="" class="specials-item__container">
+            <img src="images/emj.png" alt="" class="specials-item__img">
+            <span class="specials-item__title">Товар дня</span>
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section hits">
+  <!-- <section class="section hits">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Хиты продаж</h2>
@@ -119,7 +128,7 @@
             <div class="item-img">
               <img src="images/hit1.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color active" data-color="58B2EE"></i>
                 <i class="item-color" data-color="FFC35A"></i>
                 <i class="item-color" data-color="93D1A8"></i>
                 <i class="item-color" data-color="566B2E"></i>
@@ -150,7 +159,7 @@
             <div class="item-img">
               <img src="images/hit2.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color active" data-color="58B2EE"></i>
                 <i class="item-color" data-color="FFC35A"></i>
                 <i class="item-color" data-color="93D1A8"></i>
                 <i class="item-color" data-color="566B2E"></i>
@@ -181,7 +190,7 @@
             <div class="item-img">
               <img src="images/hit3.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color active" data-color="58B2EE"></i>
                 <i class="item-color" data-color="FFC35A"></i>
                 <i class="item-color" data-color="93D1A8"></i>
                 <i class="item-color" data-color="566B2E"></i>
@@ -212,7 +221,7 @@
             <div class="item-img">
               <img src="images/hit4.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color active" data-color="58B2EE"></i>
                 <i class="item-color" data-color="FFC35A"></i>
                 <i class="item-color" data-color="93D1A8"></i>
                 <i class="item-color" data-color="566B2E"></i>
@@ -239,9 +248,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section popular">
+  <!-- <section class="section popular">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Популярные категории</h2>
@@ -251,33 +260,41 @@
       <div class="container popular-container">
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/popular1.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/popular1.png" alt="">
+            </div>
             <span class="item2-title">Парты</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/popular2.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/popular2.png" alt="">
+            </div>
             <span class="item2-title">Комплекты</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/popular3.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/popular3.png" alt="">
+            </div>
             <span class="item2-title">Кресла</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/popular4.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/popular4.png" alt="">
+            </div>
             <span class="item2-title">Стульчики</span>
           </a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section new">
+  <!-- <section class="section new">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Новинки</h2>
@@ -289,7 +306,7 @@
             <div class="item-img">
               <img src="images/new1.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color active" data-color="FE9BB8"></i>
                 <i class="item-color" data-color="5AB0FF"></i>
                 <i class="item-color" data-color="54E251"></i>
               </div>
@@ -320,7 +337,7 @@
             <div class="item-img">
               <img src="images/new2.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color active" data-color="FE9BB8"></i>
                 <i class="item-color" data-color="5AB0FF"></i>
                 <i class="item-color" data-color="54E251"></i>
               </div>
@@ -351,7 +368,7 @@
             <div class="item-img">
               <img src="images/new3.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color active" data-color="FE9BB8"></i>
                 <i class="item-color" data-color="5AB0FF"></i>
                 <i class="item-color" data-color="54E251"></i>
               </div>
@@ -382,7 +399,7 @@
             <div class="item-img">
               <img src="images/new4.png" alt="">
               <div class="item-colors">
-                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color active" data-color="FE9BB8"></i>
                 <i class="item-color" data-color="5AB0FF"></i>
                 <i class="item-color" data-color="54E251"></i>
               </div>
@@ -409,9 +426,9 @@
         </div>        
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section sales">
+  <!-- <section class="section sales">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Акции</h2>
@@ -524,10 +541,10 @@
         </div> 
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="subscribe">
-    <div class="wrapper">
+  <!-- <section class="subscribe">
+    <div class="wrapper subscribe-wrapper">
       <div class="subscribe-content">
         <strong class="subscribe-title">Подпишитесь на нашу рассылку и получайте бонусы!</strong>
         <span class="subscribe-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
@@ -539,9 +556,9 @@
       </div>
       <img src="images/podpishis.png" alt="" class="subscribe-img">
     </div>
-  </section>
+  </section> -->
 
-  <section class="section news">
+  <!-- <section class="section news">
     <div class="wrapper">
       <h2 class="section__title_text">Узнайте больше про эргономичную мебель</h2>
       <div class="news-labels">
@@ -601,9 +618,9 @@
         </article>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section instruction">
+  <!-- <section class="section instruction">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Инструкции</h2>
@@ -613,33 +630,41 @@
       <div class="container instruction-container">
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/instr1.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/instr1.png" alt="">
+            </div>
             <span class="item2-title">Парты</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/instr2.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/instr2.png" alt="">
+            </div>
             <span class="item2-title">Комплекты</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/instr3.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/instr3.png" alt="">
+            </div>
             <span class="item2-title">Кресла</span>
           </a>
         </div>
         <div class="item2">
           <a href="" class="item2-container">
-            <img src="images/instr4.png" alt="" class="item2-img">
+            <div class="item2-img">
+              <img src="images/instr4.png" alt="">
+            </div>
             <span class="item2-title">Стульчики</span>
           </a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section faq">
+  <!-- <section class="section faq">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Ответы на часто задаваемые вопросы</h2>
@@ -706,85 +731,154 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section reviews">
+  <!-- <section class="section reviews">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Отзывы о магазине</h2>
         <a href="" class="section__title_link color-green">Все отзывы</a>
       </div>
       <div class="container reviews-container">
-        <div class="review">
-          <div class="review-container">
-            <div class="review-top">
-              <div class="review-author">
-                <div class="review-author__avatar">A</div>
-                <strong class="review-author__name">Анастасия</strong>
+        <div class="review-col">
+          <div class="review">
+            <div class="review-container">
+              <div class="review-top">
+                <div class="review-author">
+                  <div class="review-author__avatar">A</div>
+                  <strong class="review-author__name">Анастасия</strong>
+                </div>
+                <span class="review-date">5 декабря 2020</span>
+                <div class="rating review-rating">
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                </div>
               </div>
-              <span class="review-date">5 декабря 2020</span>
-              <div class="rating review-rating">
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
+
+              <div class="review-content">
+                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <div class="review-images">
+                  <div class="review-img"><img src="images/review1-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review2-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+                </div>
+                <div class="review-text">
+                  <p><b>Достоинства:</b> Произведено и упаковано качественно. Инструкция для сборки простая и понятная. Комплект полный. </p>
+                  <p><b>Недостатки:</b> Сидушка у стула глубокая(сидеть вплотную к спинке стула с согнутыми в коленях ногами не получится,если говорить про дошкольников и младших школьников),ребенку под спину придется,вероятнее всего, что-либо подкладывать,что бы не горбился. </p>
+                  <p><b>Комментарий:</b> Режим удлинения высоты стула не всегда работает корректно-периодически возникает перекос,при регулировке, из-за несинхронного подъема выдвигающихся опорстула. Что бы опустить стул и стол,необходимо их выдвинуть максимально(указано на шкале на опорах) и затем опустить максимально вниз. </p>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="review-content">
-              <a href="" class="review-link">Посмотреть купленный товар</a>
-              <div class="review-images">
-                <div class="review-img"><img src="images/review1-img.png" alt=""></div>
-                <div class="review-img"><img src="images/review2-img.png" alt=""></div>
-                <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+          <div class="review">
+            <div class="review-container">
+              <div class="review-top">
+                <div class="review-author">
+                  <div class="review-author__avatar">
+                    <img src="images/review.png" alt="">
+                  </div>
+                  <strong class="review-author__name">Дмитрий</strong>
+                </div>
+                <span class="review-date">26 ноября 2020</span>
+                <div class="rating review-rating">
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                </div>
               </div>
-              <div class="review-text">
-                <p><b>Достоинства:</b> Произведено и упаковано качественно. Инструкция для сборки простая и понятная. Комплект полный. </p>
-                <p><b>Недостатки:</b> Сидушка у стула глубокая(сидеть вплотную к спинке стула с согнутыми в коленях ногами не получится,если говорить про дошкольников и младших школьников),ребенку под спину придется,вероятнее всего, что-либо подкладывать,что бы не горбился. </p>
-                <p><b>Комментарий:</b> Режим удлинения высоты стула не всегда работает корректно-периодически возникает перекос,при регулировке, из-за несинхронного подъема выдвигающихся опорстула. Что бы опустить стул и стол,необходимо их выдвинуть максимально(указано на шкале на опорах) и затем опустить максимально вниз. </p>
+
+              <div class="review-content">
+                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <div class="review-text">
+                  <p><b>Достоинства:</b> Крепко сделано. Запах пластика отсутствует  </p>
+                  <p><b>Недостатки:</b> Немного кривовата спинка стула</p>
+                  <p><b>Комментарий:</b> Покупал для первоклашки. Порадовало качество сварных соединений и окраски. В сборке никаких проблем, в регулировках тоже. Можно выставить даже на не идеально ровном полу. Покупкой довольны!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="review">
-          <div class="review-container">
-            <div class="review-top">
-              <div class="review-author">
-                <div class="review-author__avatar">E</div>
-                <strong class="review-author__name">Егор</strong>
+        <div class="review-col">
+          <div class="review">
+            <div class="review-container">
+              <div class="review-top">
+                <div class="review-author">
+                  <div class="review-author__avatar">E</div>
+                  <strong class="review-author__name">Егор</strong>
+                </div>
+                <span class="review-date">12 декабря 2020</span>
+                <div class="rating review-rating">
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                </div>
               </div>
-              <span class="review-date">12 декабря 2020</span>
-              <div class="rating review-rating">
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-                <i class="rating-star rating-star--full"></i>
-              </div>
-            </div>
 
-            <div class="review-content">
-              <a href="" class="review-link">Посмотреть купленный товар</a>
-              <div class="review-images">
-                <div class="review-img"><img src="images/review1-img.png" alt=""></div>
-                <div class="review-img"><img src="images/review2-img.png" alt=""></div>
-                <div class="review-img"><img src="images/review3-img.png" alt=""></div>
-              </div>
-              <div class="review-text">
-                <p><b>Достоинства:</b> Качество  </p>
-                <p><b>Недостатки:</b> Нет</p>
-                <p><b>Комментарий:</b> Очень качественная парта, легко собирается, удобная а использовании. Купили дочери на 2 годика, с удовольствие сидит и занимается !) </p>
+              <div class="review-content">
+                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <div class="review-images">
+                  <div class="review-img"><img src="images/review1-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review2-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+                </div>
+                <div class="review-text">
+                  <p><b>Достоинства:</b> Качество  </p>
+                  <p><b>Недостатки:</b> Нет</p>
+                  <p><b>Комментарий:</b> Очень качественная парта, легко собирается, удобная а использовании. Купили дочери на 2 годика, с удовольствие сидит и занимается !) </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="review">
+            <div class="review-container">
+              <div class="review-top">
+                <div class="review-author">
+                  <div class="review-author__avatar">
+                    <img src="images/review2.png" alt="">
+                  </div>
+                  <strong class="review-author__name">Оксана</strong>
+                </div>
+                <span class="review-date">25 октября 2020</span>
+                <div class="rating review-rating">
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                  <i class="rating-star rating-star--full"></i>
+                </div>
+              </div>
+
+              <div class="review-content">
+                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <div class="review-images">
+                  <div class="review-img"><img src="images/review1-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review2-img.png" alt=""></div>
+                  <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+                </div>
+                <div class="review-text">
+                  <p><b>Достоинства:</b> Эргономичный, компактный, ребенок в восторге. Хороший ценник.</p>
+                  <p><b>Недостатки:</b> Пользуемся неделю, пока только плюсы</p>
+                  <p><b>Комментарий:</b> отличная парта для первоклассника. Однозначно рекомендую</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section brands">
+  <!-- <section class="section brands">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Популярные бренды</h2>
@@ -864,21 +958,121 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section address">
+  <!-- <section class="section address">
     <div class="wrapper">
       <div class="section__title">
         <h2 class="section__title_text">Адрес и контакты</h2>
       </div>
       <div class="address-content">
         <div class="address-plash">
-          
+          <strong class="address-plash__title">ООО “ТД РиФ”</strong>
+          <span class="address-plash__text">г. Москва, Старопетровский проезд 7А строение 6</span>
+          <div class="address-plash__phones">
+            <a href="tel:+7 800 256 66 66">+7 800 256 66 66</a> <br>
+            <a href="tel:+7 495 255 44 11">+7 495 255 44 11</a>
+          </div>
+          <a href="mailto:hello@detskaya-parta.ru" class="address-plash__email">hello@detskaya-parta.ru</a>
+          <div class="socials address-socials">
+            <a href="" class="socials-item"><img src="images/icons.svg#instagram" alt=""></a>
+            <a href="" class="socials-item"><img src="images/icons.svg#twitter" alt=""></a>
+            <a href="" class="socials-item"><img src="images/icons.svg#facebook" alt=""></a>
+          </div>
         </div>
         <div class="address-map" id="map"></div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="wrapper">
+        <div class="footer-top__wrapper flex">
+          <div class="footer-logo_block">
+            <a href="" class="logo footer-logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
+            <span class="footer-logo_block__text">Детские парты-трансформеры, стулья и модульная мебель</span>
+            <div class="footer-pays">
+              <img src="images/icons.svg#mastercard" alt="" width="32" height="26" class="footer-pay">
+              <img src="images/icons.svg#visa" alt="" width="49" height="17" class="footer-pay">
+              <img src="images/icons.svg#paypal" alt="" width="67" height="16" class="footer-pay">
+              <img src="images/icons.svg#yandex" alt="" width="78" height="14" class="footer-pay">
+              <img src="images/icons.svg#sber" alt="" width="80" height="13" class="footer-pay">
+            </div>
+            <div class="footer-rating">
+              <strong class="footer-rating__title">Рейтинг магазина</strong>
+              <div class="rating footer-rating__flex">
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <span>1590 отзывов</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-block">
+            <strong class="footer-block__title">Бренды</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Holto-6</a></li>
+              <li class="footer-menu__item"><a href="">Rifforma</a></li>
+              <li class="footer-menu__item"><a href="">Duoback</a></li>
+              <li class="footer-menu__item"><a href="">Ergo-BABO</a></li>
+              <li class="footer-menu__item"><a href="">Mealux</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <strong class="footer-block__title">Мебель</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Парты</a></li>
+              <li class="footer-menu__item"><a href="">Комплекты</a></li>
+              <li class="footer-menu__item"><a href="">Столы</a></li>
+              <li class="footer-menu__item"><a href="">Кресла</a></li>
+              <li class="footer-menu__item"><a href="">Стулья</a></li>
+              <li class="footer-menu__item"><a href="">Аксессуары</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <strong class="footer-block__title">Помощь</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Доставка</a></li>
+              <li class="footer-menu__item"><a href="">Оплата</a></li>
+              <li class="footer-menu__item"><a href="">Возврат</a></li>
+              <li class="footer-menu__item"><a href="">Гарантии</a></li>
+              <li class="footer-menu__item"><a href="">Инструкции</a></li>
+              <li class="footer-menu__item"><a href="">Отзывы</a></li>
+              <li class="footer-menu__item"><a href="">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <strong class="footer-block__title">Контакты</strong>
+            <a href="tel:+7 800 236 55 55" class="footer-block__text">+7 800 236 55 55</a> <br>
+            <a href="tel:+7 495 255 55 44" class="footer-block__text">+7 495 255 55 44</a> <br>
+            <a href="mailto:hello@detskaya-parta.ru" class="footer-block__text">hello@detskaya-parta.ru</a> <br>
+            <span class="footer-block__text">Работаем: <br> 8:00 - 21:00</span>
+            <div class="socials footer-socials">
+              <a href="" class="socials-item"><img src="images/icons.svg#instagram" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#twitter" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#facebook" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <div class="footer-bottom__wrapper flex">
+          <span class="footer-bottom__text">Детская Парта © 2020 Все права защищены.</span>
+          <span class="footer-bottom__text">ИНН 856451256, ОГРНИП: 45687952666</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>

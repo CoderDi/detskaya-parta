@@ -4,12 +4,34 @@
 $(document).ready(function(){
 
   
-  $(".js-getcall").click(function(){
-    $("#popup-call").addClass("active");
+  $(".header-city__text").click(function(){
+    $(this).parents(".header-city").toggleClass('active');
   });
-  $(".js-getmail").click(function(){
-    $("#popup-mail").addClass("active");
+  $(".header-city__drop_item").click(function(){
+    $(this).parents(".header-city").removeClass('active');
+    $(this).parents(".header-city").find(".header-city__text").text($(this).text());
   });
+  
+
+  $(".js-banner-slider").slick({
+    arrows: false
+  });
+
+  $('.faq-item__quest').click(function(){
+    $(this).parents(".faq-item").toggleClass("active");
+    $(this).next(".faq-item__answer").slideToggle(200);
+  });
+
+  if ($(".item-color").length > 0) {
+    $(".item-color").each(function(){
+      var color = "#" + $(this).data("color");
+      $(this).css("background", color);
+    })
+  }
+  $(".item-color").click(function(){
+    $(this).parents(".item-colors").find(".item-color").removeClass("active");
+    $(this).addClass("active");
+  })
 
     
 
@@ -33,18 +55,13 @@ $(document).ready(function(){
   ymaps.ready(function () {
     if ($("#map").length != 0) {
           myMap = new ymaps.Map('map', {
-          center: [56.644836, 47.870521],
-          zoom: 16,
+          center: [55.824602, 37.501384],
+          zoom: 17,
           controls: []
         }),
-        myPlacemark = new ymaps.Placemark([56.644836, 47.870521], {
-          hintContent: 'ул. Красноармейская, д. 87',
-          balloonContent: 'ул. Красноармейская, д. 87'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: 'images/pin.png',
-          iconImageSize: [35, 46],
-          iconImageOffset: [-25, -46]
+        myPlacemark = new ymaps.Placemark([55.824602, 37.501384], {
+          hintContent: 'Старопетровский проезд, 7Ас6',
+          balloonContent: 'Старопетровский проезд, 7Ас6',
         });
         myMap.geoObjects.add(myPlacemark);
     }

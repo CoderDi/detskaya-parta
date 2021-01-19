@@ -14,5 +14,107 @@ body
   position: relative
   width: 100%
   margin: 0 auto
-  max-width: 1080px
+  max-width: 1445px
   padding: 0 15px
+.container
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -12px
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #2CCC59
+  border-radius: 3px
+  height: 40px
+  width: 170px
+  font-weight: 500
+  font-size: 16px
+  line-height: 23px
+  color: #FFFFFF
+  cursor: pointer
+  border: 1px solid transparent
+  &:hover
+    background: transparent
+    border-color: #2CCC59
+    color: #2CCC59
+  &--border
+    background: transparent
+    border-color: #2CCC59
+    color: #2CCC59
+    &:hover
+      background: #2CCC59
+      color: #ffffff
+
+.input
+  display: block
+  width: 100%
+  box-sizing: border-box
+  border: 1px solid #EBEBF0
+  border-radius: 3px
+  padding: 0 18px
+  font-family: Jost
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 23px
+  color: #525E6A
+  height: 40px
+  &::placeholder
+    color: #525E6A
+    opacity: 1
+.section
+  margin: 70px 0
+  &__title
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    &_text 
+      margin: 0
+      font-weight: 600
+      font-size: 24px
+      line-height: 35px
+      color: #181A34
+    &_link
+      display: block
+      padding-top: 5px
+      margin-left: 20px
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      color: #525E6A
+      &.color-green
+        color: #2CCC59
+      &:hover
+        text-decoration: underline
+
+.rating
+  display: flex
+  align-items: center
+  &-star
+    display: block
+    flex-shrink: 0
+    width: 16px
+    height: 16px
+    margin-left: 5px
+    background: url(../images/icons.svg#star-gold) no-repeat center
+    background-size: contain
+
+.socials
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &-item
+    display: block
+    width: 24px
+    height: 24px
+    margin-right: 20px
+    flex-shrink: 0
+    &:hover
+      opacity: 0.7
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: contain
+
