@@ -1,13 +1,884 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title></title>
+  <title>Детская парта</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-top">
+      <div class="wrapper">
+        <div class="header-top__wrapper">
+          <div class="header-city">
+            <span class="header-city__text">г. Москва</span>
+            <ul class="header-city__drop">
+              <li class="header-city__drop_item">г. Москва</li>
+              <li class="header-city__drop_item">г. Санкт-Петербург</li>
+              <li class="header-city__drop_item">г. Новосибирск</li>
+              <li class="header-city__drop_item">г. Владивосток</li>
+            </ul>
+          </div>
+
+          <ul class="header-top__menu">
+            <li class="header-top__menu_item"><a href="">Отзывы</a></li>
+            <li class="header-top__menu_item"><a href="">Контакты</a></li>
+            <li class="header-top__menu_item"><a href="">Доставка</a></li>
+            <li class="header-top__menu_item"><a href="">Инструкции</a></li>
+            <li class="header-top__menu_item"><a href="">Гарантия</a></li>
+            <li class="header-top__menu_item"><a href="">Сертификаты</a></li>
+            <li class="header-top__menu_item"><a href="">Условия возврата</a></li>
+            <li class="header-top__menu_item"><a href="">Оплата</a></li>
+            <li class="header-top__menu_item"><a href="">Реквизиты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="wrapper">
+        <div class="header-bottom__wrapper">
+          <a href="" class="logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
+          <span class="header-bottom__address">м. Войковская <br>
+            Старопетровский проезд 7А стр. 6</span>
+          <form action="" class="header-search">
+            <input type="text" class="input header-search__input" placeholder="Искать на сайте">
+            <input type="submit" class="submit header-search__submit" value="">
+          </form>
+          <span class="header-bottom__grafik">
+            График работы
+            <b>8:00-21:00</b>
+          </span>
+          <div class="header-bottom__phones">
+            <a href="tel:+7 800 236 55 55" class="header-bottom__phone">+7 800 236 55 55</a>
+            <a href="tel:+7 495 255 55 44" class="header-bottom__phone">+7 495 255 55 44</a>
+          </div>
+          <a href="#" class="btn header-bottom__btn js-getcall">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header-menu">
+      <div class="wrapper">
+        <ul class="header-menu__list">
+          <li class="header-menu__item"><a href="">Парты</a></li>
+          <li class="header-menu__item"><a href="">Кресла</a></li>
+          <li class="header-menu__item"><a href="">Комплекты</a></li>
+          <li class="header-menu__item"><a href="">Аксессуары</a></li>
+          <li class="header-menu__item"><a href="">Взрослая мебель</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Акции</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Подбор парты и стула</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Видеодемонстрация</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="wrapper">
+      <div class="banner-slider js-banner-slider">
+        <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specials">
+    <div class="wrapper">
+      <div class="specials-list">
+        <div class="specials-item specials-item1">
+          <img src="images/box.png" alt="" class="specials-item__img">
+          <span class="specials-item__title">Товары с бесплатной
+            доставкой</span>
+        </div>
+        <div class="specials-item specials-item2">
+          <img src="images/asset.png" alt="" class="specials-item__img">
+          <span class="specials-item__title">Скидки до 50%</span>
+        </div>
+        <div class="specials-item specials-item3">
+          <img src="images/asset2.png" alt="" class="specials-item__img">
+          <span class="specials-item__title">Рассрочка</span>
+        </div>
+        <div class="specials-item specials-item4">
+          <img src="images/emj.png" alt="" class="specials-item__img">
+          <span class="specials-item__title">Товар дня</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hits">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Хиты продаж</h2>
+      </div>
+      <div class="container hits-container">
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/hit1.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color" data-color="FFC35A"></i>
+                <i class="item-color" data-color="93D1A8"></i>
+                <i class="item-color" data-color="566B2E"></i>
+                <i class="item-color" data-color="FF93B3"></i>
+                <i class="item-color" data-color="5C5C5B"></i>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">16 990 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/hit2.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color" data-color="FFC35A"></i>
+                <i class="item-color" data-color="93D1A8"></i>
+                <i class="item-color" data-color="566B2E"></i>
+                <i class="item-color" data-color="FF93B3"></i>
+                <i class="item-color" data-color="5C5C5B"></i>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Комплект парта с подставкой для книг и стул RIFFORMA SET-17 (серый)</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">6990 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/hit3.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color" data-color="FFC35A"></i>
+                <i class="item-color" data-color="93D1A8"></i>
+                <i class="item-color" data-color="566B2E"></i>
+                <i class="item-color" data-color="FF93B3"></i>
+                <i class="item-color" data-color="5C5C5B"></i>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Парта-трансформер TCT Nanotec R6-XS с газ-лифтом</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">28 200 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/hit4.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="58B2EE"></i>
+                <i class="item-color" data-color="FFC35A"></i>
+                <i class="item-color" data-color="93D1A8"></i>
+                <i class="item-color" data-color="566B2E"></i>
+                <i class="item-color" data-color="FF93B3"></i>
+                <i class="item-color" data-color="5C5C5B"></i>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Парта ДЭМИ ВАЙТ СУТ-25</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">18 400 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section popular">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Популярные категории</h2>
+        <a href="" class="section__title_link">Посмотреть все</a>
+      </div>
+
+      <div class="container popular-container">
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/popular1.png" alt="" class="item2-img">
+            <span class="item2-title">Парты</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/popular2.png" alt="" class="item2-img">
+            <span class="item2-title">Комплекты</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/popular3.png" alt="" class="item2-img">
+            <span class="item2-title">Кресла</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/popular4.png" alt="" class="item2-img">
+            <span class="item2-title">Стульчики</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section new">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Новинки</h2>
+        <a href="" class="section__title_link">Посмотреть все</a>
+      </div>
+      <div class="container new-container">
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/new1.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color" data-color="5AB0FF"></i>
+                <i class="item-color" data-color="54E251"></i>
+              </div>
+              <div class="item-labels">
+                <span class="item-label item-label--new">Новинка</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Кресло Holto-3 (розовый)</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">8900 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/new2.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color" data-color="5AB0FF"></i>
+                <i class="item-color" data-color="54E251"></i>
+              </div>
+              <div class="item-labels">
+                <span class="item-label item-label--new">Новинка</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Стул-кресло RIFFORMA-05 LUX (серый) с изменяемой глубиной...</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">4290 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/new3.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color" data-color="5AB0FF"></i>
+                <i class="item-color" data-color="54E251"></i>
+              </div>
+              <div class="item-labels">
+                <span class="item-label item-label--new">Новинка</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Комплект парта и стульчик Mealux EVO-05</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">10 350 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/new4.png" alt="">
+              <div class="item-colors">
+                <i class="item-color" data-color="FE9BB8"></i>
+                <i class="item-color" data-color="5AB0FF"></i>
+                <i class="item-color" data-color="54E251"></i>
+              </div>
+              <div class="item-labels">
+                <span class="item-label item-label--new">Новинка</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Комплект FunDesk Bambino парта - мольберт и стул + лампа в подарок</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">8 990 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <section class="section sales">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Акции</h2>
+        <a href="" class="section__title_link">Посмотреть все</a>
+      </div>
+      <div class="container sales-container">
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/sale1.png" alt="">
+              <div class="item-labels">
+                <span class="item-label item-label--sale">-27%</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Светильник настольный светодиодный Rifforma TL6</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">2990 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/sale2.png" alt="">
+              <div class="item-labels">
+                <span class="item-label item-label--sborka">Бесплатная сборка</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Полка с подставкой для книг RIFFORMA-81 (голубой)</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">1790 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/sale3.png" alt="">
+              <div class="item-labels">
+                <span class="item-label item-label--delivery">Доставка 0₽</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Подставка для книг RIFFORMA (голубой)</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">1490 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="images/sale4.png" alt="">
+              <div class="item-labels">
+                <span class="item-label item-label--sale">-27%</span>
+                <span class="item-label item-label--delivery">Доставка 0₽</span>
+              </div>
+            </div>
+            <div class="item-content">
+              <a href="" class="item-title">Комплект парта и кресло Mealux EVO-50</a>
+              <ul class="item-tth">
+                <li class="item-tth__line">Для ребенка ростом от и до (см):	105-180</li>
+                <li class="item-tth__line">Материал столешницы:	ЛДСП</li>
+                <li class="item-tth__line">Тип столешницы:	Раздельная</li>
+              </ul>
+            </div>
+            <div class="item-footer">
+              <strong class="item-price">39 950 ₽</strong>
+              <div class="item-btns">
+                <a href="#" class="btn btn--border item-btn--border item-btn">Купить в 1 клик</a>
+                <a href="#" class="btn item-btn">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <div class="wrapper">
+      <div class="subscribe-content">
+        <strong class="subscribe-title">Подпишитесь на нашу рассылку и получайте бонусы!</strong>
+        <span class="subscribe-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+          Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+        <form action="" class="subscribe-form">
+          <input type="email" class="input subscribe-form__input" placeholder="Введите ваш e-mail">
+          <input type="submit" value="Подписаться" class="submit btn subscribe-form__submit">
+        </form>
+      </div>
+      <img src="images/podpishis.png" alt="" class="subscribe-img">
+    </div>
+  </section>
+
+  <section class="section news">
+    <div class="wrapper">
+      <h2 class="section__title_text">Узнайте больше про эргономичную мебель</h2>
+      <div class="news-labels">
+        <a href="#" class="news-label">Обзоры</a>
+        <a href="#" class="news-label">Рейтинги</a>
+        <a href="#" class="news-label">Как выбрать?</a>
+        <a href="#" class="news-label">Сравнение</a>
+        <a href="#" class="news-label">Рюкзаки</a>
+      </div>
+      <div class="container news-container">
+        <article class="item3">
+          <div class="item3-container">
+            <div class="item3-img"><img src="images/news1.jpg" alt=""></div>
+            <div class="item3-content">
+              <a href="" class="item3-title">Обзор на продукцию компании RIFFORMA. Плюсы и минусы столов</a>
+              <span class="item3-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+                Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+            </div>
+            <a href="" class="btn btn--border item3-btn">Читать статью</a>
+          </div>
+        </article>
+
+        <article class="item3">
+          <div class="item3-container">
+            <div class="item3-img"><img src="images/news2.jpg" alt=""></div>
+            <div class="item3-content">
+              <a href="" class="item3-title">Сравнение старых советских и современных школьных парт и стульев</a>
+              <span class="item3-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+                Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+            </div>
+            <a href="" class="btn btn--border item3-btn">Читать статью</a>
+          </div>
+        </article>
+
+        <article class="item3">
+          <div class="item3-container">
+            <div class="item3-img"><img src="images/news3.jpg" alt=""></div>
+            <div class="item3-content">
+              <a href="" class="item3-title">Когда нужно задуматься для покупки ребенку парты-трансформера?</a>
+              <span class="item3-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+                Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+            </div>
+            <a href="" class="btn btn--border item3-btn">Читать статью</a>
+          </div>
+        </article>
+
+        <article class="item3">
+          <div class="item3-container">
+            <div class="item3-img"><img src="images/news4.jpg" alt=""></div>
+            <div class="item3-content">
+              <a href="" class="item3-title">Обзор на парты-трансформеры и регулируемые стулья Молл (Германия)</a>
+              <span class="item3-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+                Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+            </div>
+            <a href="" class="btn btn--border item3-btn">Читать статью</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section instruction">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Инструкции</h2>
+        <a href="" class="section__title_link">Посмотреть все</a>
+      </div>
+
+      <div class="container instruction-container">
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/instr1.png" alt="" class="item2-img">
+            <span class="item2-title">Парты</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/instr2.png" alt="" class="item2-img">
+            <span class="item2-title">Комплекты</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/instr3.png" alt="" class="item2-img">
+            <span class="item2-title">Кресла</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="" class="item2-container">
+            <img src="images/instr4.png" alt="" class="item2-img">
+            <span class="item2-title">Стульчики</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Ответы на часто задаваемые вопросы</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Как подобрать парту?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Как оплатить заказ?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Где узнать размеры?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Как вернуть товар?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Можно ли купить в рассрочку?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item__quest">
+            <span>Не могу опустить парту. Что делать?</span>
+            <i class="faq-item__quest_btn"></i>
+          </div>
+          <div class="faq-item__answer">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Отзывы о магазине</h2>
+        <a href="" class="section__title_link color-green">Все отзывы</a>
+      </div>
+      <div class="container reviews-container">
+        <div class="review">
+          <div class="review-container">
+            <div class="review-top">
+              <div class="review-author">
+                <div class="review-author__avatar">A</div>
+                <strong class="review-author__name">Анастасия</strong>
+              </div>
+              <span class="review-date">5 декабря 2020</span>
+              <div class="rating review-rating">
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <a href="" class="review-link">Посмотреть купленный товар</a>
+              <div class="review-images">
+                <div class="review-img"><img src="images/review1-img.png" alt=""></div>
+                <div class="review-img"><img src="images/review2-img.png" alt=""></div>
+                <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+              </div>
+              <div class="review-text">
+                <p><b>Достоинства:</b> Произведено и упаковано качественно. Инструкция для сборки простая и понятная. Комплект полный. </p>
+                <p><b>Недостатки:</b> Сидушка у стула глубокая(сидеть вплотную к спинке стула с согнутыми в коленях ногами не получится,если говорить про дошкольников и младших школьников),ребенку под спину придется,вероятнее всего, что-либо подкладывать,что бы не горбился. </p>
+                <p><b>Комментарий:</b> Режим удлинения высоты стула не всегда работает корректно-периодически возникает перекос,при регулировке, из-за несинхронного подъема выдвигающихся опорстула. Что бы опустить стул и стол,необходимо их выдвинуть максимально(указано на шкале на опорах) и затем опустить максимально вниз. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-container">
+            <div class="review-top">
+              <div class="review-author">
+                <div class="review-author__avatar">E</div>
+                <strong class="review-author__name">Егор</strong>
+              </div>
+              <span class="review-date">12 декабря 2020</span>
+              <div class="rating review-rating">
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <a href="" class="review-link">Посмотреть купленный товар</a>
+              <div class="review-images">
+                <div class="review-img"><img src="images/review1-img.png" alt=""></div>
+                <div class="review-img"><img src="images/review2-img.png" alt=""></div>
+                <div class="review-img"><img src="images/review3-img.png" alt=""></div>
+              </div>
+              <div class="review-text">
+                <p><b>Достоинства:</b> Качество  </p>
+                <p><b>Недостатки:</b> Нет</p>
+                <p><b>Комментарий:</b> Очень качественная парта, легко собирается, удобная а использовании. Купили дочери на 2 годика, с удовольствие сидит и занимается !) </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section brands">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Популярные бренды</h2>
+      </div>
+      <div class="container brands-container">
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="brand-container">
+            <img src="images/gamdias.png" alt="" class="brand-img">
+            <span class="brands-title">Gamdias</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section address">
+    <div class="wrapper">
+      <div class="section__title">
+        <h2 class="section__title_text">Адрес и контакты</h2>
+      </div>
+      <div class="address-content">
+        <div class="address-plash">
+          
+        </div>
+        <div class="address-map" id="map"></div>
+      </div>
+    </div>
+  </section>
   
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
