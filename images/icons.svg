@@ -214,6 +214,13 @@
     </g>
   </svg>
 
+  <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="caret-right" class="img">
+      <path d="M3.75 1.875L6.875 5L3.75 8.125" stroke="#525E6A" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+
 
 
 

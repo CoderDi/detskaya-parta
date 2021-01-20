@@ -543,32 +543,36 @@
     </div>
   </section> -->
 
-  <section class="subscribe">
-    <div class="wrapper subscribe-wrapper">
-      <div class="subscribe-content">
-        <strong class="subscribe-title">Подпишитесь на нашу рассылку и получайте бонусы!</strong>
-        <span class="subscribe-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
-          Мы не спамим и отправляем всего по 1 письму в неделю!</span>
-        <form action="" class="subscribe-form">
-          <input type="email" class="input subscribe-form__input" placeholder="Введите ваш e-mail">
-          <input type="submit" value="Подписаться" class="submit btn subscribe-form__submit">
-        </form>
+  <!-- <section class="subscribe">
+    <div class="wrapper">
+      <div class="subscribe-wrapper">
+        <img src="images/podpishis.png" alt="" class="subscribe-img">
+        <div class="subscribe-content">
+          <strong class="subscribe-title">Подпишитесь на нашу рассылку и получайте бонусы!</strong>
+          <span class="subscribe-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+            Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+          <form action="" class="subscribe-form">
+            <input type="email" class="input subscribe-form__input" placeholder="Введите ваш e-mail">
+            <input type="submit" value="Подписаться" class="submit btn subscribe-form__submit">
+          </form>
+        </div>
       </div>
-      <img src="images/podpishis.png" alt="" class="subscribe-img">
     </div>
-  </section>
+  </section> -->
 
   <!-- <section class="section news">
     <div class="wrapper">
       <h2 class="section__title_text">Узнайте больше про эргономичную мебель</h2>
-      <div class="news-labels">
-        <a href="#" class="news-label">Обзоры</a>
-        <a href="#" class="news-label">Рейтинги</a>
-        <a href="#" class="news-label">Как выбрать?</a>
-        <a href="#" class="news-label">Сравнение</a>
-        <a href="#" class="news-label">Рюкзаки</a>
+      <div class="news-labels__container">
+        <div class="news-labels">
+          <a href="#" class="news-label">Обзоры</a>
+          <a href="#" class="news-label">Рейтинги</a>
+          <a href="#" class="news-label">Как выбрать?</a>
+          <a href="#" class="news-label">Сравнение</a>
+          <a href="#" class="news-label">Рюкзаки</a>
+        </div>
       </div>
-      <div class="container news-container">
+      <div class="container news-container js-news-slider">
         <article class="item3">
           <div class="item3-container">
             <div class="item3-img"><img src="images/news1.jpg" alt=""></div>
@@ -746,9 +750,12 @@
               <div class="review-top">
                 <div class="review-author">
                   <div class="review-author__avatar">A</div>
-                  <strong class="review-author__name">Анастасия</strong>
+                  <div class="review-author__text">
+                    <strong class="review-author__name">Анастасия</strong>
+                    <span class="review-date review-date--mobile">5 декабря 2020</span>
+                  </div>
                 </div>
-                <span class="review-date">5 декабря 2020</span>
+                <span class="review-date review-date--desktop">5 декабря 2020</span>
                 <div class="rating review-rating">
                   <i class="rating-star rating-star--full"></i>
                   <i class="rating-star rating-star--full"></i>
@@ -759,7 +766,10 @@
               </div>
 
               <div class="review-content">
-                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <strong class="review-content__title">Парта-трансформер Ergosenso XM-96</strong>
+                <div class="review-link__container">
+                  <a href="" class="review-link">Посмотреть купленный товар</a>
+                </div>
                 <div class="review-images">
                   <div class="review-img"><img src="images/review1-img.png" alt=""></div>
                   <div class="review-img"><img src="images/review2-img.png" alt=""></div>
@@ -769,6 +779,10 @@
                   <p><b>Достоинства:</b> Произведено и упаковано качественно. Инструкция для сборки простая и понятная. Комплект полный. </p>
                   <p><b>Недостатки:</b> Сидушка у стула глубокая(сидеть вплотную к спинке стула с согнутыми в коленях ногами не получится,если говорить про дошкольников и младших школьников),ребенку под спину придется,вероятнее всего, что-либо подкладывать,что бы не горбился. </p>
                   <p><b>Комментарий:</b> Режим удлинения высоты стула не всегда работает корректно-периодически возникает перекос,при регулировке, из-за несинхронного подъема выдвигающихся опорстула. Что бы опустить стул и стол,необходимо их выдвинуть максимально(указано на шкале на опорах) и затем опустить максимально вниз. </p>
+                </div>
+
+                <div class="review-content__more">
+                  <span class="review-content__more_text">Читать полностью</span>
                 </div>
               </div>
             </div>
@@ -781,9 +795,12 @@
                   <div class="review-author__avatar">
                     <img src="images/review.png" alt="">
                   </div>
-                  <strong class="review-author__name">Дмитрий</strong>
+                  <div class="review-author__text">
+                    <strong class="review-author__name">Дмитрий</strong>
+                    <span class="review-date review-date--mobile">26 ноября 2020</span>
+                  </div>
                 </div>
-                <span class="review-date">26 ноября 2020</span>
+                <span class="review-date review-date--desktop">26 ноября 2020</span>
                 <div class="rating review-rating">
                   <i class="rating-star rating-star--full"></i>
                   <i class="rating-star rating-star--full"></i>
@@ -794,11 +811,18 @@
               </div>
 
               <div class="review-content">
-                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <strong class="review-content__title">Парта-трансформер Ergosenso XM-96</strong>
+                <div class="review-link__container">
+                  <a href="" class="review-link">Посмотреть купленный товар</a>
+                </div>
                 <div class="review-text">
                   <p><b>Достоинства:</b> Крепко сделано. Запах пластика отсутствует  </p>
                   <p><b>Недостатки:</b> Немного кривовата спинка стула</p>
                   <p><b>Комментарий:</b> Покупал для первоклашки. Порадовало качество сварных соединений и окраски. В сборке никаких проблем, в регулировках тоже. Можно выставить даже на не идеально ровном полу. Покупкой довольны!</p>
+                </div>
+
+                <div class="review-content__more">
+                  <span class="review-content__more_text">Читать полностью</span>
                 </div>
               </div>
             </div>
@@ -811,9 +835,12 @@
               <div class="review-top">
                 <div class="review-author">
                   <div class="review-author__avatar">E</div>
-                  <strong class="review-author__name">Егор</strong>
+                  <div class="review-author__text">
+                    <strong class="review-author__name">Егор</strong>
+                    <span class="review-date review-date--mobile">12 декабря 2020</span>
+                  </div>
                 </div>
-                <span class="review-date">12 декабря 2020</span>
+                <span class="review-date review-date--desktop">12 декабря 2020</span>
                 <div class="rating review-rating">
                   <i class="rating-star rating-star--full"></i>
                   <i class="rating-star rating-star--full"></i>
@@ -824,7 +851,10 @@
               </div>
 
               <div class="review-content">
-                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <strong class="review-content__title">Парта-трансформер Ergosenso XM-96</strong>
+                <div class="review-link__container">
+                  <a href="" class="review-link">Посмотреть купленный товар</a>
+                </div>
                 <div class="review-images">
                   <div class="review-img"><img src="images/review1-img.png" alt=""></div>
                   <div class="review-img"><img src="images/review2-img.png" alt=""></div>
@@ -834,6 +864,10 @@
                   <p><b>Достоинства:</b> Качество  </p>
                   <p><b>Недостатки:</b> Нет</p>
                   <p><b>Комментарий:</b> Очень качественная парта, легко собирается, удобная а использовании. Купили дочери на 2 годика, с удовольствие сидит и занимается !) </p>
+                </div>
+
+                <div class="review-content__more">
+                  <span class="review-content__more_text">Читать полностью</span>
                 </div>
               </div>
             </div>
@@ -846,9 +880,12 @@
                   <div class="review-author__avatar">
                     <img src="images/review2.png" alt="">
                   </div>
-                  <strong class="review-author__name">Оксана</strong>
+                  <div class="review-author__text">
+                    <strong class="review-author__name">Оксана</strong>
+                    <span class="review-date review-date--mobile">25 октября 2020</span>
+                  </div>
                 </div>
-                <span class="review-date">25 октября 2020</span>
+                <span class="review-date review-date--desktop">25 октября 2020</span>
                 <div class="rating review-rating">
                   <i class="rating-star rating-star--full"></i>
                   <i class="rating-star rating-star--full"></i>
@@ -859,7 +896,10 @@
               </div>
 
               <div class="review-content">
-                <a href="" class="review-link">Посмотреть купленный товар</a>
+                <strong class="review-content__title">Парта-трансформер Ergosenso XM-96</strong>
+                <div class="review-link__container">
+                  <a href="" class="review-link">Посмотреть купленный товар</a>
+                </div>
                 <div class="review-images">
                   <div class="review-img"><img src="images/review1-img.png" alt=""></div>
                   <div class="review-img"><img src="images/review2-img.png" alt=""></div>
@@ -870,11 +910,17 @@
                   <p><b>Недостатки:</b> Пользуемся неделю, пока только плюсы</p>
                   <p><b>Комментарий:</b> отличная парта для первоклассника. Однозначно рекомендую</p>
                 </div>
+
+                <div class="review-content__more">
+                  <span class="review-content__more_text">Читать полностью</span>
+                </div>
               </div>
             </div>
           </div>
         </div>        
       </div>
+
+      <a href="" class="reviews-btn--all">Смотреть все отзывы</a>
     </div>
   </section> -->
 
@@ -883,77 +929,89 @@
       <div class="section__title">
         <h2 class="section__title_text">Популярные бренды</h2>
       </div>
-      <div class="container brands-container">
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+      <div class="container brands-container js-brands-slider">
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
+          </div>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
+          </div>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
+          </div>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
+          </div>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
+          </div>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+        <div class="brand__wrapper">
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
-          </div>
-        </div>
-        <div class="brand">
-          <div class="brand-container">
-            <img src="images/gamdias.png" alt="" class="brand-img">
-            <span class="brands-title">Gamdias</span>
+          <div class="brand">
+            <div class="brand-container">
+              <img src="images/gamdias.png" alt="" class="brand-img">
+              <span class="brands-title">Gamdias</span>
+            </div>
           </div>
         </div>
       </div>
@@ -985,7 +1043,7 @@
     </div>
   </section> -->
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer-top">
       <div class="wrapper">
         <div class="footer-top__wrapper flex">
@@ -1012,7 +1070,7 @@
             </div>
           </div>
 
-          <div class="footer-block">
+          <div class="footer-block footer-block--menu">
             <strong class="footer-block__title">Бренды</strong>
             <ul class="footer-menu">
               <li class="footer-menu__item"><a href="">Holto-6</a></li>
@@ -1023,7 +1081,7 @@
             </ul>
           </div>
 
-          <div class="footer-block">
+          <div class="footer-block footer-block--menu">
             <strong class="footer-block__title">Мебель</strong>
             <ul class="footer-menu">
               <li class="footer-menu__item"><a href="">Парты</a></li>
@@ -1035,7 +1093,7 @@
             </ul>
           </div>
 
-          <div class="footer-block">
+          <div class="footer-block footer-block--menu">
             <strong class="footer-block__title">Помощь</strong>
             <ul class="footer-menu">
               <li class="footer-menu__item"><a href="">Доставка</a></li>
@@ -1072,8 +1130,8 @@
         </div>
       </div>
     </div>
-  </footer> -->
-  
+  </footer>
+
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>

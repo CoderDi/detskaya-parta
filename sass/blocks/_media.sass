@@ -30,6 +30,37 @@
     &-slider
       border-radius: 0
       margin: 0 -5px
+  .subscribe
+    background: none
+    margin: 70px 0
+    .wrapper
+      padding: 0
+    &-wrapper
+      padding: 0
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+    &-content
+      width: 100%
+      max-width: 100%
+      padding: 30px 15px
+      background: #F6F6F9
+    &-img
+      position: static
+      display: block
+      margin: 0 auto
+      width: 540px
+    &-form
+      max-width: 615px
+  .category
+    &__item
+      width: 25%
+      margin-bottom: 25px
+    &__list
+      margin-bottom: -25px
+  .brands-page 
+    .brand
+        width: 25%
 
 
 @media screen and (max-width: 980px)
@@ -39,7 +70,6 @@
     border-bottom: none
     margin: 0 -15px
     padding-bottom: 35px
-
   .item
     padding: 0
     height: auto
@@ -47,7 +77,17 @@
     border-bottom: 1px solid #EBEBF0
     &-container
       border: none
-      
+  .item3
+    height: auto
+  .news-container
+    padding-bottom: 35px
+  .review
+    &-col
+      width: 100%
+  .footer
+    &-block
+      &--menu
+        display: none 
 
 
 @media screen and (max-width: 768px)
@@ -78,6 +118,143 @@
     &-title
       font-size: 16px
       line-height: 23px
+  .item3
+    &-btn
+      width: 100%
+  .news
+    &-label
+      flex-shrink: 0
+      margin: 0 5px
+      &s
+        position: relative
+        padding: 0 10px 20px
+        flex-wrap: nowrap
+        overflow: hidden
+        overflow-x: auto
+        margin: 0
+        &__container
+          margin: 15px -15px 5px
+          height: 40px
+          overflow: hidden
+          margin-bottom: 25px
+  .faq
+    &-list
+      margin-top: -20px
+      border: none
+      padding: 0
+    &-item
+      padding: 20px 0
+  .review
+    margin-bottom: 40px
+    &s
+      .section__title_link
+        display: none
+      &-container
+        max-height: 100000px
+        &::after
+          display: none
+      &-btn--all
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto
+        max-width: 350px
+        width: 100%
+        height: 40px
+        border: 1px solid #525E6A
+        box-sizing: border-box
+        border-radius: 3px
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        text-align: center
+        color: #525E6A
+    &-date
+      &--mobile
+        display: block
+      &--desktop
+        display: none
+    &-content
+      padding: 0
+      &__title
+        display: block
+        margin: 10px 0
+      &.active 
+        max-height: 300px
+        overflow: hidden
+        position: relative
+        .review-content__more
+          position: absolute
+          display: block
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 60px
+          padding-top: 35px
+          background: linear-gradient(to top, #fff 40px, rgba(255, 255, 255, 0))
+          &_text
+            font-weight: 500
+            font-size: 16px
+            line-height: 23px
+            color: #181A34
+    &-images
+      display: none
+    &-link
+      margin-bottom: 15px
+      order: 10
+      &__container
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin-left: -5px
+        .rating
+          margin-bottom: 15px
+          margin-right: 25px
+  .brand
+    margin-bottom: 25px
+    &__wrapper
+      padding: 0 8px
+    &-img
+      width: 100%
+      object-fit: contain
+  .address
+    margin: 40px 0 0
+    &-content
+      display: block
+      padding: 0
+    &-map
+      margin: 0 -15px
+      position: static
+      width: auto
+      height: 460px
+      border-radius: 0
+    &-plash
+      width: 100%
+      padding: 0 0 25px
+      &__title
+        margin-bottom: 15px
+      &__text, &__phones, &__email
+        margin-bottom: 25px
+  .page404
+    &-img 
+      img
+        margin-bottom: 20px
+      &__text
+        font-size: 18px
+        line-height: 26px
+    &-catalog
+      &__title
+        font-size: 20px
+        line-height: 29px
+        margin-bottom: 25px
+  .category
+    &__item
+      width: 50%
+  .brands-page 
+    .brand
+      width: 50%
+    .brands-container
+      margin-bottom: -25px
 
 
 
@@ -115,9 +292,31 @@
       padding: 1px 10px
       font-size: 12px
       line-height: 17px
-
-
-
+  .subscribe
+    &-text
+      margin-bottom: 25px
+    &-form
+      display: block
+      &__submit
+        width: 100%
+        margin: 10px 0 0
+  .footer
+    &-block
+      display: none
+    &-bottom
+      .wrapper
+        padding: 0
+      &__wrapper
+        padding: 20px 25px 10px
+        display: block
+      &__text
+        display: block
+        margin-bottom: 10px
+    &-top
+      .wrapper
+        padding: 0 25px
+      &__wrapper
+        padding: 20px 0 30px
 
 
 

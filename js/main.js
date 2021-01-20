@@ -28,6 +28,30 @@ $(document).ready(function(){
     $(this).addClass("active");
   });
 
+  $(".review-content__more").click(function(){
+    $(this).parents(".review-content").removeClass("active");
+  });
+
+  function restructureReviews() { 
+    if ((window.innerWidth <= 768)&($(".section.reviews").length)) {
+      $(".review").each(function(){
+        $(this).find(".rating").appendTo($(this).find(".review-link__container"));
+        var h = $(this).find(".review-content").outerHeight();
+        if (h > 200) {
+          $(this).find(".review-content").addClass("active");
+        } else {
+          $(this).find(".review-content").removeClass("active");
+        }    
+      });
+    } else {
+      $(".review").each(function(){
+        $(this).find(".rating").appendTo($(this).find(".review-top"));
+      });
+    }
+  }
+
+  
+
   function windowsSlider() {    
     if (window.innerWidth <= 980) {
       if (($(".js-items-slider").length != 0) && !($(".js-items-slider").hasClass("slick-slider"))) {
@@ -48,16 +72,78 @@ $(document).ready(function(){
           ]
         });
       }
+      if (($(".js-news-slider").length != 0) && !($(".js-news-slider").hasClass("slick-slider"))) {
+        $(".js-news-slider").slick({
+          infinite: false,
+          arrows: false,
+          dots: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      }
     } else {
       if (($(".js-items-slider").length != 0) && ($(".js-items-slider").hasClass("slick-slider"))){
         $(".js-items-slider").slick('unslick');
+      }
+      if (($(".js-news-slider").length != 0) && ($(".js-news-slider").hasClass("slick-slider"))){
+        $(".js-news-slider").slick('unslick');
+      }
+    }
+
+    if (window.innerWidth <= 1170) {
+      if (($(".js-brands-slider").length != 0) && !($(".js-brands-slider").hasClass("slick-slider"))) {
+        $(".js-brands-slider").slick({
+          infinite: false,
+          arrows: false,
+          dots: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 980,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      }
+    } else {
+      if (($(".js-brands-slider").length != 0) && ($(".js-brands-slider").hasClass("slick-slider"))){
+        $(".js-brands-slider").slick('unslick');
       }
     }
 
   }
   windowsSlider();
+  restructureReviews();
   $(window).resize(function(){
     windowsSlider();
+    restructureReviews();
   });
 
     
@@ -77,18 +163,32 @@ $(document).ready(function(){
     $(".input-date").mask("99.99.99");
   });
   var myMap;
-  ymaps.ready(function () {
+  ymaps.ready(init);
+  function init() {
     if ($("#map").length != 0) {
-          myMap = new ymaps.Map('map', {
-          center: [55.824602, 37.501384],
-          zoom: 17,
-          controls: []
-        }),
-        myPlacemark = new ymaps.Placemark([55.824602, 37.501384], {
-          hintContent: 'Старопетровский проезд, 7Ас6',
-          balloonContent: 'Старопетровский проезд, 7Ас6',
-        });
-        myMap.geoObjects.add(myPlacemark);
+        myMap = new ymaps.Map('map', {
+        center: [55.824602, 37.503384],
+        zoom: 17,
+        controls: []
+      }),
+      myPlacemark = new ymaps.Placemark([55.824602, 37.501384], {
+        hintContent: 'Старопетровский проезд, 7Ас6',
+        balloonContent: 'Старопетровский проезд, 7Ас6',
+      });
+      myMap.geoObjects.add(myPlacemark);
+
+      function onResizeMap() {
+        if (window.innerWidth > 768) {
+          myMap.setCenter([55.824602, 37.503384]);
+        } else {
+            myMap.setCenter([55.824602, 37.501384]);
+        }
+      } 
+      onResizeMap();
+
+      window.onresize = function () {
+          onResizeMap();
+      };
     }    
-  });
+  };
 });

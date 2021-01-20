@@ -1,0 +1,101 @@
+main
+  margin-top: 40px
+.page404
+  &-img
+    max-width: 900px
+    margin: 0 auto
+    img
+      display: block
+      width: 100%
+      height: auto
+      margin-bottom: 45px
+    &__text
+      display: block
+      font-weight: normal
+      font-size: 32px
+      line-height: 46px
+      text-align: center
+      color: #525E6A
+  &-catalog
+    &__title
+      display: block
+      font-weight: normal
+      font-size: 24px
+      line-height: 35px
+      text-align: center
+      color: #181A34
+      margin-bottom: 35px
+.category
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__item
+    width: 12.5%
+    padding: 0 5px
+    &_container
+      display: block
+      text-align: center
+      max-width: 140px
+      margin: 0 auto
+      &:hover
+        .category__item_title
+          font-weight: 500
+    &_img
+      display: block
+      width: 140px
+      height: 80px
+      object-fit: contain
+      margin-bottom: 15px
+    &_title
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+      color: #525E6A
+.contacts
+  margin: 25px 0 70px
+.breadcrumbs
+  margin-bottom: 25px
+  &-link
+    position: relative
+    display: inline-block
+    margin-right: 28px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #525E6A
+    &:hover
+      color: #181A34
+    &::after
+      position: absolute
+      right: -19px
+      top: 5px
+      content: ''
+      width: 10px
+      height: 10px
+      background: url(../images/icons.svg#caret-right) no-repeat center
+      background-size: contain
+  &-current
+    pointer-events: none
+    color: #181A34
+    &::after
+      display: none
+      margin: 0
+.brand
+  &s
+    &-page
+      .brands-container
+        margin-bottom: -50px
+      .brand
+        width: 16.666%
+        padding: 0 12px
+
+
+
+
+
+
+
+
+
+
+
