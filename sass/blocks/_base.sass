@@ -68,6 +68,7 @@ body
   &__title
     display: flex
     align-items: center
+    flex-wrap: wrap
     margin-bottom: 30px
     &_text 
       margin: 0
@@ -114,7 +115,35 @@ body
       opacity: 0.7
     img
       display: block
-      width: 100%
-      height: 100%
-      object-fit: contain
+      width: 24px
+      height: 24px
 
+.slick
+  &-dots
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+      width: 10px
+      height: 10px
+      color: transparent
+      font-size: 0
+      padding: 0
+      border: none
+      outline: none
+      box-shadow: none
+      background: #F6F6F9
+      border-radius: 100%
+      margin: 0 4px
+      cursor: pointer
+    .slick-active button
+      background: #2CCC59
+  &-track
+    display: flex

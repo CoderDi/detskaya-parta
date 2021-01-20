@@ -6,6 +6,7 @@
     display: flex
     &__item
       flex-shrink: 0
+      outline: none
       img
         display: block
         width: 100%
@@ -37,7 +38,7 @@
       img
         width: 175px
         height: 166px
-        left: -25px
+        left: -30px
         bottom: -28px
     &2
       img
@@ -63,6 +64,7 @@
 .item
   width: 25%
   padding: 0 12px
+  outline: none
   &-container
     height: 100%
     border: 1px solid #EBEBF0
@@ -201,6 +203,8 @@
   &-wrapper
     padding: 60px 0
   &-content
+    position: relative
+    z-index: 2
     max-width: 615px
   &-title
     display: block
