@@ -32,6 +32,24 @@ $(document).ready(function(){
     $(this).parents(".review-content").removeClass("active");
   });
 
+  $(".counter-minus").click(function(){
+    console.log("-");
+    var value = parseInt($(this).parent().find("input").val());
+    value--;
+    if (value == 0) {
+      value = 1;
+    }
+    if (value < 2) $(this).parents(".cart-item__count").find(".cart-item__count_one").hide();
+    $(this).parent().find("input").val(value);
+  });
+  $(".counter-plus").click(function(){
+    console.log("+");
+    var value = parseInt($(this).parent().find("input").val());
+    value++;
+    $(this).parent().find("input").val(value);
+    $(this).parents(".cart-item__count").find(".cart-item__count_one").show();
+  });
+
   function restructureReviews() { 
     if ((window.innerWidth <= 768)&($(".section.reviews").length)) {
       $(".review").each(function(){

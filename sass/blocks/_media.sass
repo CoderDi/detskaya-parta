@@ -61,7 +61,31 @@
   .brands-page 
     .brand
         width: 25%
-
+  .cart
+    &-item
+      padding: 15px
+      flex-wrap: wrap
+      &__img
+        width: 140px
+        margin-right: 15px
+      &__content
+        flex-wrap: wrap
+        width: calc(100% - 165px)
+      &__title
+        width: 100%
+        max-width: 100%
+        &_text
+          margin: 0
+      &__count
+        .cart-item__title_caption
+          display: none
+      &__price
+        .cart-item__title_caption
+          display: none
+      &__footer
+        position: static
+        width: 100%
+        margin-top: 20px
 
 @media screen and (max-width: 980px)
   .slider-container
@@ -255,7 +279,36 @@
       width: 50%
     .brands-container
       margin-bottom: -25px
-
+  .cart
+    padding: 20px 0 30px
+    &-form
+      display: block
+      margin: 0 -15px
+    &-item
+      border-radius: 0
+      &__img
+        height: auto
+        img
+          height: auto
+      &__title
+        &_text
+          font-size: 16px
+          line-height: 23px
+      &__price
+        &_text
+          font-size: 16px
+          line-height: 28px
+      &__footer
+        &_btn
+          margin-right: 25px
+    &-aside
+      width: auto
+      margin: 0 15px
+    &-result
+      margin: 0 -15px 20px
+  .main
+    &-title
+      margin-bottom: 20px
 
 
 @media screen and (max-width: 480px)

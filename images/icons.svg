@@ -220,6 +220,20 @@
     </g>
   </svg>
 
+  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="check" class="img">
+      <path d="M13.5 4.50037L6.5 11.5001L3 8.00037" stroke="#2CCC59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="check-promo" class="img">
+      <path d="M20.25 6.75049L9.75 17.25L4.5 12.0005" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+ </svg>
+
+
+
 
 
 
