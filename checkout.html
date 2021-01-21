@@ -81,10 +81,26 @@
       <div class="wrapper">
         <div class="main-title flex">
           <h2 class="main-title__text">Оформление заказа</h2>
+          <div class="checkout-steps flex">
+            <div class="checkout-step checkout-step1 active">
+              <span class="checkout-step__num">1</span>
+              <span class="checkout-step__text">Личные данные</span>
+            </div>
+            <i class="grow checkout-step__grow"></i>
+            <div class="checkout-step checkout-step2">
+              <span class="checkout-step__num">2</span>
+              <span class="checkout-step__text">Доставка</span>
+            </div>
+            <i class="grow checkout-step__grow"></i>
+            <div class="checkout-step checkout-step3">
+              <span class="checkout-step__num">3</span>
+              <span class="checkout-step__text">Оплата</span>
+            </div>
+          </div>
         </div>
 
         <form action="" class="checkout-form">
-          <div class="checkout-slider">
+          <div class="checkout-slider js-checkout-slider">
             <div class="checkout-slide" id="checkout-personal">
               <div class="checkout-slide__title">
                 <strong class="checkout-slide__title_text">Личные данные</strong>
@@ -112,17 +128,62 @@
               </div>
 
               <div class="checkout-slide__content">
-                
+                <div class="checkout-slide__flex">
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#storefront" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">Самовывоз</b>
+                    <span class="checkout-slide__flex_item_text">г. Москва, Старопетровский проезд 7А строение 6</span>
+                  </div>
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#car" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">Доставка по МСК</b>
+                    <span class="checkout-slide__flex_item_text">Дата доставки: 31.12.2020 <br> Цена: 659 ₽</span>
+                  </div>
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#truck" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">Доставка по РФ</b>
+                    <span class="checkout-slide__flex_item_text">3-4 недели <br> <a href="">Рассчитать стоимость</a></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-slide__footer">
+                <span class="checkout-slide__prev js-checkout-prev" data-prev="1">Предыдущий шаг</span>
+                <span class="btn checkout-personal__btn js-checkout-next" data-next="3">Перейти к оплате</span>
               </div>
             </div>
 
             <div class="checkout-slide" id="checkout-pays">
               <div class="checkout-slide__title">
                 <strong class="checkout-slide__title_text">Оплата</strong>
+                <strong class="checkout-slide__title_span">Выберите способ оплаты</strong>
               </div>
 
               <div class="checkout-slide__content">
-                
+                <div class="checkout-slide__flex">
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#money" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">Наличными при получении</b>
+                    <span class="checkout-slide__flex_item_text">г. Москва, Старопетровский проезд 7А строение 6</span>
+                  </div>
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#credit-card" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">Картой на сайте</b>
+                    <span class="checkout-slide__flex_item_text">Дата доставки: 31.12.2020 <br> Цена: 659 ₽</span>
+                  </div>
+                  <div class="checkout-slide__flex_item">
+                    <img src="images/icons.svg#receipt" alt="" class="checkout-slide__flex_item_img">
+                    <b class="checkout-slide__flex_item_title">На расчетный счёт</b>
+                    <span class="checkout-slide__flex_item_text">3-4 недели <br> <a href="">Рассчитать стоимость</a></span>
+                  </div>
+
+                  <textarea name="comment" class="textarea input checkout-slide__flex_textarea" placeholder="Комментарий к заказу"></textarea>
+                </div>
+              </div>
+
+              <div class="checkout-slide__footer">
+                <span class="checkout-slide__prev js-checkout-prev" data-prev="2">Предыдущий шаг</span>
+                <span class="btn checkout-personal__btn">Оформить заказ</span>
               </div>
             </div>
             

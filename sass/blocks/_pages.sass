@@ -320,7 +320,10 @@
 .checkout
   &-form
     display: flex
+    width: 100%
   &-slide
+    display: none
+    padding: 0 15px
     &__title
       margin-bottom: 30px
       &_text
@@ -336,10 +339,104 @@
         line-height: 23px
         color: #525E6A
     &r
-      flex-grow: 2
+      width: calc(100% - 360px)
       background: #fff
       padding: 30px
       border-radius: 10px
+    &__flex
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      &_item
+        width: calc(33.333% - 21px)
+        padding: 25px
+        border: 1px solid #EBEBF0
+        box-sizing: border-box
+        border-radius: 10px
+        text-align: center
+        cursor: pointer
+        &:hover
+          border-color: #2CCC59
+        &_img
+          display: block
+          width: 60px
+          height: 60px
+          margin: 0 auto 10px
+        &_title
+          display: block
+          margin-bottom: 6px
+          font-weight: 500
+          font-size: 18px
+          line-height: 28px
+          color: #181A34
+        &_text
+          display: block
+          font-weight: normal
+          font-size: 16px
+          line-height: 23px
+          color: #525E6A
+          a
+            color: #0066FF
+            text-decoration: underline
+            &:hover
+              text-decoration: none
+      &_textarea
+        margin-top: 15px
+        height: 56px
+        padding-top: 15px
+        resize: none
+    &__footer
+      margin-top: 25px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+    &__prev
+      display: block
+      margin-right: 32px
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #181A34
+      padding-left: 30px
+      background: url(../images/icons.svg#prev-step) no-repeat left top
+      background-size: 20px 20px
+      cursor: pointer
+      &:hover
+        text-decoration: underline
+  &-step
+    display: flex
+    align-items: center
+    &.active
+      .checkout-step__num
+        background: #2CCC59
+      .checkout-step__text
+        color: #181A34
+    &__grow
+      display: block
+      margin: 0 25px
+      height: 1px
+      background: #B6BFC9
+      width: 120px
+    &__num
+      display: block
+      width: 30px
+      height: 30px
+      margin-right: 10px
+      flex-shrink: 0
+      background: #b6bfc9
+      border-radius: 100%
+      font-weight: 500
+      font-size: 16px
+      line-height: 30px
+      text-align: center
+      color: #FFFFFF
+    &__text
+      font-weight: 500
+      font-size: 16px
+      line-height: 23px
+      color: #B6BFC9
+
+  
   &-personal
     &__form
       display: flex
@@ -355,13 +452,23 @@
       width: calc(33.333% - 20px)
   &-check
     width: calc(66.666% - 12px)
+
+  
 .check
   display: flex
   align-items: flex-start
   cursor: pointer
   input
     display: none
+    &:checked ~ .check-custom::after
+      position: absolute
+      content: ''
+      width: 16px
+      height: 16px
+      background: url(../images/icons.svg#check) no-repeat center
+      background-size: contain
   &-custom
+    position: relative
     display: block
     flex-shrink: 0
     width: 18px

@@ -50,6 +50,23 @@ $(document).ready(function(){
     $(this).parents(".cart-item__count").find(".cart-item__count_one").show();
   });
 
+  $(".js-checkout-slider").slick({
+    infinite: false,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true
+  });
+  $(".js-checkout-next").click(function(){
+    $(".js-checkout-slider").slick("slickNext");
+    $(".checkout-step").removeClass("active");
+    $(".checkout-step" + $(this).data("next")).addClass("active");
+  });
+  $(".js-checkout-prev").click(function(){
+    $(".js-checkout-slider").slick("slickPrev");
+    $(".checkout-step").removeClass("active");
+    $(".checkout-step" + $(this).data("prev")).addClass("active");
+  });
+
   function restructureReviews() { 
     if ((window.innerWidth <= 768)&($(".section.reviews").length)) {
       $(".review").each(function(){
