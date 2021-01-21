@@ -77,130 +77,55 @@
   </header> -->
 
   <main class="main">
-    <section class="cart">
+    <section class="cart checkout">
       <div class="wrapper">
-        <div class="main-title">
-          <h2 class="main-title__text">Корзина</h2>
-          <span class="main-title__span">6 товаров</span>
+        <div class="main-title flex">
+          <h2 class="main-title__text">Оформление заказа</h2>
         </div>
 
-        <form action="" class="cart-form">
-          <div class="cart-list">
-            <div class="cart-item">
-              <div class="cart-item__img"><img src="images/cart-item.png" alt=""></div>
-              <div class="cart-item__content flex">
-                <div class="cart-item__title">
-                  <span class="cart-item__title_caption">Арт. 946047262384</span>
-                  <a href="" class="cart-item__title_text">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
-                </div>
-                <div class="cart-item__count">
-                  <span class="cart-item__title_caption">Кол-во</span>
-                  <div class="counter counter--cart">
-                    <span class="counter-btn counter-minus"></span>
-                    <input type="text" class="counter-input" value="1">
-                    <span class="counter-btn counter-plus"></span>
-                  </div>
-                  <span class="cart-item__count_one">12 990 ₽ / шт</span>
-                </div>
-                <div class="cart-item__price">
-                  <span class="cart-item__title_caption">Цена</span>
-                  <strong class="cart-item__price_text">12 990 ₽</strong>
-                </div>
+        <form action="" class="checkout-form">
+          <div class="checkout-slider">
+            <div class="checkout-slide" id="checkout-personal">
+              <div class="checkout-slide__title">
+                <strong class="checkout-slide__title_text">Личные данные</strong>
               </div>
-              <div class="cart-item__footer flex">
-                <span class="cart-item__footer_btn">В избранное</span>
-                <span class="cart-item__footer_btn">Удалить</span>
-                <span class="grow"></span>
-                <span class="cart-item__footer_status cart-item__footer_status--green">В наличии</span>
+
+              <div class="checkout-slide__content">
+                <div class="checkout-personal__form">
+                  <input type="tel" class="input checkout-personal__input" placeholder="Номер телефона">
+                  <input type="text" class="input checkout-personal__input" placeholder="Имя">
+                  <input type="text" class="input checkout-personal__input" placeholder="Фамилия">
+                  <span class="btn checkout-personal__btn js-checkout-next" data-next="2">Дальше</span>
+                  <label class="check checkout-check">
+                    <input type="checkbox" checked>
+                    <span class="check-custom"></span>
+                    <span class="check-text">Оформляя заказ, я подтверждаю, что ознакомился с <a href="">Политикой обработки данных</a> и согласен с ними</span>
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="cart-item">
-              <div class="cart-item__img"><img src="images/cart-item.png" alt=""></div>
-              <div class="cart-item__content flex">
-                <div class="cart-item__title">
-                  <span class="cart-item__title_caption">Арт. 946047262384</span>
-                  <a href="" class="cart-item__title_text">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
-                </div>
-                <div class="cart-item__count">
-                  <span class="cart-item__title_caption">Кол-во</span>
-                  <div class="counter counter--cart">
-                    <span class="counter-btn counter-minus"></span>
-                    <input type="text" class="counter-input" value="1">
-                    <span class="counter-btn counter-plus"></span>
-                  </div>
-                  <span class="cart-item__count_one">12 990 ₽ / шт</span>
-                </div>
-                <div class="cart-item__price">
-                  <span class="cart-item__title_caption">Цена</span>
-                  <strong class="cart-item__price_text">12 990 ₽</strong>
-                </div>
+            <div class="checkout-slide" id="checkout-delivery">
+              <div class="checkout-slide__title">
+                <strong class="checkout-slide__title_text">Доставка</strong>
+                <strong class="checkout-slide__title_span">Выберите способ доставки</strong>
               </div>
-              <div class="cart-item__footer flex">
-                <span class="cart-item__footer_btn">В избранное</span>
-                <span class="cart-item__footer_btn">Удалить</span>
-                <span class="grow"></span>
-                <span class="cart-item__footer_status cart-item__footer_status--green">В наличии</span>
+
+              <div class="checkout-slide__content">
+                
               </div>
             </div>
 
-            <div class="cart-item">
-              <div class="cart-item__img"><img src="images/cart-item.png" alt=""></div>
-              <div class="cart-item__content flex">
-                <div class="cart-item__title">
-                  <span class="cart-item__title_caption">Арт. 946047262384</span>
-                  <a href="" class="cart-item__title_text">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
-                </div>
-                <div class="cart-item__count">
-                  <span class="cart-item__title_caption">Кол-во</span>
-                  <div class="counter counter--cart">
-                    <span class="counter-btn counter-minus"></span>
-                    <input type="text" class="counter-input" value="1">
-                    <span class="counter-btn counter-plus"></span>
-                  </div>
-                  <span class="cart-item__count_one">12 990 ₽ / шт</span>
-                </div>
-                <div class="cart-item__price">
-                  <span class="cart-item__title_caption">Цена</span>
-                  <strong class="cart-item__price_text">12 990 ₽</strong>
-                </div>
+            <div class="checkout-slide" id="checkout-pays">
+              <div class="checkout-slide__title">
+                <strong class="checkout-slide__title_text">Оплата</strong>
               </div>
-              <div class="cart-item__footer flex">
-                <span class="cart-item__footer_btn">В избранное</span>
-                <span class="cart-item__footer_btn">Удалить</span>
-                <span class="grow"></span>
-                <span class="cart-item__footer_status cart-item__footer_status--green">В наличии</span>
-              </div>
-            </div>
 
-            <div class="cart-item">
-              <div class="cart-item__img"><img src="images/cart-item.png" alt=""></div>
-              <div class="cart-item__content flex">
-                <div class="cart-item__title">
-                  <span class="cart-item__title_caption">Арт. 946047262384</span>
-                  <a href="" class="cart-item__title_text">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
-                </div>
-                <div class="cart-item__count">
-                  <span class="cart-item__title_caption">Кол-во</span>
-                  <div class="counter counter--cart">
-                    <span class="counter-btn counter-minus"></span>
-                    <input type="text" class="counter-input" value="1">
-                    <span class="counter-btn counter-plus"></span>
-                  </div>
-                  <span class="cart-item__count_one">12 990 ₽ / шт</span>
-                </div>
-                <div class="cart-item__price">
-                  <span class="cart-item__title_caption">Цена</span>
-                  <strong class="cart-item__price_text">12 990 ₽</strong>
-                </div>
-              </div>
-              <div class="cart-item__footer flex">
-                <span class="cart-item__footer_btn">В избранное</span>
-                <span class="cart-item__footer_btn">Удалить</span>
-                <span class="grow"></span>
-                <span class="cart-item__footer_status cart-item__footer_status--green">В наличии</span>
+              <div class="checkout-slide__content">
+                
               </div>
             </div>
+            
           </div>
 
           <div class="cart-aside">
@@ -223,11 +148,6 @@
                 <span>78 240 ₽</span>
               </div>
             </div>
-            <label class="cart-promocode">
-              <input type="text" class="cart-promocode__input" placeholder="Есть промокод? Вводите">
-              <span class="cart-promocode__btn"></span>
-            </label>
-            <button type="submit" class="btn cart-form__submit">Оформить заказ</button>
             <a href="" class="cart-form__btn-back">Продолжить покупки</a>
           </div>
         </form>
