@@ -1,0 +1,298 @@
+.thanks
+  &-top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    &__img
+      position: relative
+      width: 500px
+      flex-shrink: 0
+      img
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+    &__content
+      flex-grow: 2
+      padding-right: 40px
+      padding-top: 40px
+    &__title
+      display: block
+      margin-bottom: 15px
+      font-weight: 600
+      font-size: 30px
+      line-height: 43px
+      color: #0066FF
+    &__order-num
+      display: block
+      margin-bottom: 10px
+      font-weight: normal
+      font-size: 24px
+      line-height: 35px
+      color: #181A34
+      b
+        font-weight: 600
+    &__text
+      display: block
+      margin-bottom: 10px
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+      color: #525E6A
+    &__list
+      list-style: none
+      padding: 0
+      margin: 15px 0 0
+      &_item
+        display: flex
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 18px
+        line-height: 26px
+        color: #525E6A
+        b
+          font-weight: 500
+        svg
+          margin-right: 12px
+          display: block
+  &-table
+    position: relative
+    z-index: 2
+    &__title
+      margin-bottom: 25px
+    &__container
+      background: #FFFFFF
+      border: 1px solid #EBEBF0
+      border-radius: 5px
+      overflow: hidden
+    &__result
+      background: #F6F6F9
+      padding: 25px 50px
+      text-align: right
+      font-weight: 600
+      font-size: 24px
+      line-height: 35px
+      color: #181A34
+    &__item
+      border-bottom: 1px solid #EBEBF0
+      padding: 5px 50px 5px 30px
+      &_img
+        width: 140px
+        height: 110px
+        flex-shrink: 0
+        margin-right: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          display: block
+          max-width: 100%
+          max-height: 100%
+      &_content
+        flex-grow: 2
+      &_block
+        margin-left: 100px
+        &-title
+          flex-grow: 2
+          margin: 0
+        &-caption
+          display: block
+          margin-bottom: 5px
+          font-weight: normal
+          font-size: 12px
+          line-height: 17px
+          color: #CFCFD7
+      &_link
+        display: inline-block
+        font-weight: normal
+        font-size: 18px
+        line-height: 28px
+        color: #181A34
+        &:hover
+          text-decoration: underline
+      &_text
+        font-weight: 500
+        font-size: 18px
+        line-height: 28px
+        color: #181A34
+
+.selected
+  &-container
+    margin-bottom: -40px
+  &-title
+    margin-bottom: 15px
+    &__text
+      display: inline-block
+      margin: 0 15px 0 0
+      font-weight: 600
+      font-size: 30px
+      line-height: 43px
+      color: #181A34
+    span
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #525E6A
+  &-filter
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 25px
+    &__drop
+      width: 220px
+      margin: 0 25px 0 0
+      flex-shrink: 0
+    &__check
+      .check-text
+        font-size: 16px
+  &-item
+    margin-bottom: 40px
+    &__btn
+      flex-grow: 2
+      margin-right: 15px
+
+
+.content
+  font-weight: normal
+  font-size: 16px
+  line-height: 150%
+  color: #525E6A
+  table
+    border: 1px solid #EBEBF0
+    border-radius: 5px
+    font-weight: normal
+    font-size: 18px
+    line-height: 26px
+    color: #525E6A
+    display: block
+    max-width: 600px
+    margin: 20px 0 50px
+    tbody
+      width: 100%
+      display: block
+    tr
+      display: flex
+      width: 100%
+      border-bottom: 1px solid #EBEBF0
+      &:last-child
+        border: none
+    td, th
+      text-align: left
+      padding: 15px 24px
+      width: 70%
+      display: flex
+      align-items: center
+      &:nth-child(2)
+        width: 30%
+        border-left: 1px solid #EBEBF0
+    th
+      padding: 25px
+      font-weight: 500
+      font-size: 18px
+      line-height: 26px
+  h1
+    margin: 0 0 15px
+    font-weight: 600
+    font-size: 30px
+    line-height: 43px
+    color: #181A34
+  h2
+    margin: 10px 0
+    font-weight: normal
+    font-size: 24px
+    line-height: 35px
+    color: #181A34
+  p
+    margin: 0 0 20px
+  a
+    text-decoration-line: underline
+    color: #0066ff
+    &:hover
+      text-decoration: none
+  b
+    font-weight: 500
+    a
+      text-decoration: none
+      color: #525E6A
+      &:hover
+        text-decoration: underline
+  img
+    display: block
+    margin: 20px 0 40px
+    max-width: 710px
+    height: auto
+    border-radius: 5px
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    font-size: 16px
+    line-height: 24px
+    li::before
+      display: inline-block
+      content: '—'
+      margin-right: 5px
+
+.instruction
+  &-filter
+    margin: 25px 0 30px
+    padding: 5px 25px
+    border: 1px solid #EBEBF0
+    box-sizing: border-box
+    border-radius: 5px
+    display: inline-block
+    &__item
+      border-bottom: 1px solid #EBEBF0
+      padding: 20px 0
+      display: flex
+      align-items: center
+      &:last-child
+        border: none
+      &_title
+        width: 250px
+        flex-shrink: 0
+        font-weight: 500
+        font-size: 20px
+        line-height: 29px
+        color: #181A34
+      &_list
+        display: flex
+        align-items: center
+      &_btn
+        input
+          display: none
+          &:checked ~ .instruction-filter__item_btn_custom
+            background: #181A34
+            color: #ffffff
+        &_custom
+          border: 1px solid #525E6A
+          box-sizing: border-box
+          border-radius: 3px
+          display: flex
+          align-items: center
+          justify-content: center
+          min-width: 139px
+          height: 39px
+          margin-right: 20px
+          cursor: pointer
+          &:hover, &.active
+            background: #181A34
+            color: #ffffff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

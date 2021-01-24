@@ -45,6 +45,18 @@ body
     &:hover
       background: #2CCC59
       color: #ffffff
+  &-unwish
+    display: block
+    cursor: pointer
+    width: 56px
+    height: 39px
+    border: 1px solid #FF2727
+    border-radius: 3px
+    flex-shrink: 0
+    background: url(../images/icons.svg#unwish) no-repeat center
+    background-size: 24px 24px
+    &:hover
+      border-color: #EBEBF0
 
 .input
   display: block
@@ -99,8 +111,10 @@ body
     width: 16px
     height: 16px
     margin-left: 5px
-    background: url(../images/icons.svg#star-gold) no-repeat center
+    background: url(../images/icons.svg#star) no-repeat center
     background-size: contain
+    &--full
+      background-image: url(../images/icons.svg#star-gold)
 
 .socials
   display: flex
@@ -148,3 +162,89 @@ body
       background: #2CCC59
   &-track
     display: flex
+
+
+.popup
+  position: fixed
+  z-index: 99
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  visibility: hidden
+  transition: .2s ease-in-out
+  &.active
+    opacity: 1
+    visibility: visible
+    .popup-content
+      top: 0
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(10, 10, 10, 0.65)
+    backdrop-filter: blur(10px)
+  &-content
+    transition: .2s ease-in-out
+    top: -50px
+    position: relative
+    background: #FFFFFF
+    border-radius: 15px
+    overflow: hidden
+  &-close
+    position: absolute
+    z-index: 2
+    top: 44px
+    right: 43px
+    width: 54px
+    height: 54px
+    border-radius: 100%
+    background: #F8F8F8
+    cursor: pointer
+    transform: rotate(45deg)
+    &:hover
+      background: #f0f0f0
+    &::before, &::after
+      position: absolute
+      content: ''
+      width: 26px
+      height: 2px
+      border-radius: 2px
+      background: #000
+    &::before
+      top: 26px
+      left: 14px
+    &::after
+      top: 14px
+      left: 26px
+      width: 2px
+      height: 26px
+  &-block
+    padding: 50px 40px
+    overflow-y: auto
+    max-height: calc(100vh - 20px)
+    max-width: 1500px
+    width: calc(100vw - 20px)
+  &-section
+    margin: 50px 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

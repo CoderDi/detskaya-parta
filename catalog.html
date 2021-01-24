@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Детская парта</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- <section class="banner">
+    <div class="wrapper">
+      <div class="banner-slider js-banner-slider">
+        <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
+        <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
+      </div>
+    </div>
+  </section> -->
+  
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <a href="" class="breadcrumbs-link">Главная</a>
+        <a href="" class="breadcrumbs-link">Каталог</a>
+        <a href="" class="breadcrumbs-link">Детские парты</a>
+      </div>
+    </div>
+
+    <section class="catalog">
+      <div class="wrapper">
+        <div class="category__list">
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item1.png" alt="" class="category__item_img">
+              <span class="category__item_title">Детские парты и столы</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item2.png" alt="" class="category__item_img">
+              <span class="category__item_title">Стулья и кресла к партам</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item3.png" alt="" class="category__item_img">
+              <span class="category__item_title">Письменные столы</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item4.png" alt="" class="category__item_img">
+              <span class="category__item_title">Стеллажи и модули</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item5.png" alt="" class="category__item_img">
+              <span class="category__item_title">Тумбы к партам</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item6.png" alt="" class="category__item_img">
+              <span class="category__item_title">Светильники настольные</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item7.png" alt="" class="category__item_img">
+              <span class="category__item_title">Аксессуары</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="" class="category__item_container">
+              <img src="images/category-item8.png" alt="" class="category__item_img">
+              <span class="category__item_title">Готовые комплекты</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="catalog-container">
+          <aside class="catalog-filter">
+            <form action="" class="catalog-filter__form">
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Цена</span>
+                <div class="catalog-filter__price">
+                  <div class="catalog-filter__price_element" id="catalog-filter-price" data-min="999" data-max="36900"></div>
+                  <div class="catalog-filter__price_inputs">
+                    <label class="catalog-filter__label">
+                      <span>от</span>
+                      <input type="text" id="catalog-filter-price-for" class="catalog-filter__input">
+                    </label>
+                    <label class="catalog-filter__label">
+                      <span>до</span>
+                      <input type="text" id="catalog-filter-price-to" class="catalog-filter__input">
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Бренды</span>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">RIFFORMA <span>35</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">HOLTO <span>11</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Ergosenso <span>103</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">TCT <span>15</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Mealux <span>22</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Super Light <span>3</span></span>
+                </label>
+              </div>
+
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Характеристики</span>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Для ребенка с ростом &lt;150 см <span>35</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Со скользящим покрытием из неметалла <span>11</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Дополнительная хар-ка <span>103</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Околодополнение <span>15</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">С подставкой для ног <span>22</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Нету ничего особенного <span>3</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Еще одна <span>3</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">И еще <span>3</span></span>
+                </label>
+
+                <span class="catalog-filter__block_btn-more js-filter-show-more">Посмотреть все</span>
+              </div>
+
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Рейтинг товара</span>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">
+                    <div class="rating catalog-filter__rating">
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <span>1297</span>
+                    </div>
+                  </span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">
+                    <div class="rating catalog-filter__rating">
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star"></i>
+                      <span>938</span>
+                    </div>
+                  </span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">
+                    <div class="rating catalog-filter__rating">
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <span>72</span>
+                    </div>
+                  </span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">
+                    <div class="rating catalog-filter__rating">
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <span>13</span>
+                    </div>
+                  </span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">
+                    <div class="rating catalog-filter__rating">
+                      <i class="rating-star rating-star--full"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <i class="rating-star"></i>
+                      <span>2</span>
+                    </div>
+                  </span>
+                </label>
+              </div>
+
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Товар дня</span>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Да <span>35</span></span>
+                </label>
+              </div>
+
+              <div class="catalog-filter__block">
+                <span class="catalog-filter__block_title">Акция</span>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Бесплатная сборка <span>35</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Доставка 0 ₽ <span>35</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Чехол в подарок <span>35</span></span>
+                </label>
+                <label class="check catalog-filter__check">
+                  <input type="checkbox">
+                  <span class="check-custom"></span>
+                  <span class="check-text">Новогодние -50% <span>35</span></span>
+                </label>
+              </div>
+
+              <button class="catalog-filter__form_submit">Применить фильтры</button>
+            </form>            
+          </aside>
+
+          <div class="catalog-content">
+            <h1 class="catalog-title">Детские парты</h1>
+            <div class="catalog-content__top flex">
+              <div class="single-meta__drop catalog-content__drop">
+                <span class="single-meta__drop_current">Сначала популярные</span>
+                <ul class="single-meta__drop_list">
+                  <li>Сначала популярные</li>
+                  <li>Сначала популярные</li>
+                </ul>
+              </div>
+
+              <div class="catalog-content__structure">
+                <span class="catalog-content__structure_item catalog-content__structure_line js-catalog-structure" data-structure="line">
+                  <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.6875 16.9375H2.3125C1.6394 16.9375 1.09375 17.4832 1.09375 18.1562V25.4688C1.09375 26.1418 1.6394 26.6875 2.3125 26.6875H26.6875C27.3606 26.6875 27.9062 26.1418 27.9062 25.4688V18.1562C27.9062 17.4832 27.3606 16.9375 26.6875 16.9375Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6875 2.3125H2.3125C1.6394 2.3125 1.09375 2.85815 1.09375 3.53125V10.8438C1.09375 11.5168 1.6394 12.0625 2.3125 12.0625H26.6875C27.3606 12.0625 27.9062 11.5168 27.9062 10.8438V3.53125C27.9062 2.85815 27.3606 2.3125 26.6875 2.3125Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+                <span class="catalog-content__structure_item catalog-content__structure_square active js-catalog-structure" data-structure="square">
+                  <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0625 2.3125H2.3125V12.0625H12.0625V2.3125Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6875 2.3125H16.9375V12.0625H26.6875V2.3125Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.0625 16.9375H2.3125V26.6875H12.0625V16.9375Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6875 16.9375H16.9375V26.6875H26.6875V16.9375Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+              </div>
+            </div>
+
+            <div class="catalog-content__list">
+              <div class="catalog-item">
+                <div class="catalog-item__container">
+                  <div class="catalog-item__img">
+                    <img src="images/catalog-item.png" alt="">
+                    <span class="catalog-item__status">В наличии</span>
+                  </div>
+
+                  <div class="catalog-item__content">
+                    <div class="catalog-item__labels">
+                      <span class="catalog-item__label-full"><span class="catalog-item__btn-video"></span></span>
+                      <span class="item-label item-label--new">Новинка</span>
+                      <span class="item-label item-label--sborka">Бесплатная сборка</span>
+                      <span class="item-label item-label--sale">-27%</span>
+                      <span class="item-label item-label--delivery">Доставка 0₽</span>
+                    </div>
+                    <div class="catalog-item__block1">
+                      <a href="" class="catalog-item__title">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
+                      <div class="rating catalog-item__rating">
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <span>105 отзывов</span>
+                      </div>
+                      <div class="catalog-item__block1_flex">
+                        <div class="single-meta__color-block catalog-item__colors">
+                          <span class="single-meta__color-block_title">Выбор цвета мебели</span>
+                          <div class="single-meta__colors">
+                            <span class="single-meta__color active" data-color="58B2EE"><i></i></span>
+                            <span class="single-meta__color" data-color="8858EE"><i></i></span>
+                            <span class="single-meta__color" data-color="FF2727"><i></i></span>
+                          </div>
+                        </div>
+                        <div class="catalog-item__drop_container">
+                          <span class="single-meta__color-block_title">Выберите комплект</span>
+                          <div class="single-meta__drop catalog-item__drop">
+                            <span class="single-meta__drop_current">Выбор комплектации</span>
+                            <ul class="single-meta__drop_list">
+                              <li>комплект1</li>
+                              <li>комплект2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="catalog-item__block2">
+                      <div class="catalog-item__btns-line">
+                        <span class="single-meta__btn-wish">В избранное</span>
+                        <span class="single-meta__btn-sravnenie">В сравнение</span>
+                      </div>
+                      <div class="catalog-item__price">
+                        <span class="catalog-item__price_current">12 990 ₽</span>
+                        <span class="catalog-item__price_old">19 490 ₽</span>
+                      </div>
+                      <div class="catalog-item__btns">
+                        <span class="btn catalog-item__btn-cart">В корзину</span>
+                        <span class="btn btn--border catalog-item__btn-one">
+                          <span>Купить в 1 клик</span>
+                          <i></i>
+                        </span>
+                        <span class="catalog-item__btn-wish"></span>
+                        <span class="catalog-item__btn-sravnenie"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item__container">
+                  <div class="catalog-item__img">
+                    <img src="images/catalog-item.png" alt="">
+                    <span class="catalog-item__status">В наличии</span>
+                  </div>
+
+                  <div class="catalog-item__content">
+                    <div class="catalog-item__labels">
+                      <span class="catalog-item__label-full"><span class="catalog-item__btn-video"></span></span>
+                      <span class="item-label item-label--new">Новинка</span>
+                      <span class="item-label item-label--sborka">Бесплатная сборка</span>
+                      <span class="item-label item-label--sale">-27%</span>
+                      <span class="item-label item-label--delivery">Доставка 0₽</span>
+                    </div>
+                    <div class="catalog-item__block1">
+                      <a href="" class="catalog-item__title">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
+                      <div class="rating catalog-item__rating">
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <span>105 отзывов</span>
+                      </div>
+                      <div class="catalog-item__block1_flex">
+                        <div class="single-meta__color-block catalog-item__colors">
+                          <span class="single-meta__color-block_title">Выбор цвета мебели</span>
+                          <div class="single-meta__colors">
+                            <span class="single-meta__color active" data-color="58B2EE"><i></i></span>
+                            <span class="single-meta__color" data-color="8858EE"><i></i></span>
+                            <span class="single-meta__color" data-color="FF2727"><i></i></span>
+                          </div>
+                        </div>
+                        <div class="catalog-item__drop_container">
+                          <span class="single-meta__color-block_title">Выберите комплект</span>
+                          <div class="single-meta__drop catalog-item__drop">
+                            <span class="single-meta__drop_current">Выбор комплектации</span>
+                            <ul class="single-meta__drop_list">
+                              <li>комплект1</li>
+                              <li>комплект2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="catalog-item__block2">
+                      <div class="catalog-item__btns-line">
+                        <span class="single-meta__btn-wish">В избранное</span>
+                        <span class="single-meta__btn-sravnenie">В сравнение</span>
+                      </div>
+                      <div class="catalog-item__price">
+                        <span class="catalog-item__price_current">12 990 ₽</span>
+                        <span class="catalog-item__price_old">19 490 ₽</span>
+                      </div>
+                      <div class="catalog-item__btns">
+                        <span class="btn catalog-item__btn-cart">В корзину</span>
+                        <span class="btn btn--border catalog-item__btn-one">
+                          <span>Купить в 1 клик</span>
+                          <i></i>
+                        </span>
+                        <span class="catalog-item__btn-wish"></span>
+                        <span class="catalog-item__btn-sravnenie"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item__container">
+                  <div class="catalog-item__img">
+                    <img src="images/catalog-item.png" alt="">
+                    <span class="catalog-item__status">В наличии</span>
+                  </div>
+
+                  <div class="catalog-item__content">
+                    <div class="catalog-item__labels">
+                      <span class="catalog-item__label-full"><span class="catalog-item__btn-video"></span></span>
+                      <span class="item-label item-label--new">Новинка</span>
+                      <span class="item-label item-label--sborka">Бесплатная сборка</span>
+                      <span class="item-label item-label--sale">-27%</span>
+                      <span class="item-label item-label--delivery">Доставка 0₽</span>
+                    </div>
+                    <div class="catalog-item__block1">
+                      <a href="" class="catalog-item__title">Парта растущая RIFFORMA Comfort-34 (голубой)</a>
+                      <div class="rating catalog-item__rating">
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <i class="rating-star rating-star--full"></i>
+                        <span>105 отзывов</span>
+                      </div>
+                      <div class="catalog-item__block1_flex">
+                        <div class="single-meta__color-block catalog-item__colors">
+                          <span class="single-meta__color-block_title">Выбор цвета мебели</span>
+                          <div class="single-meta__colors">
+                            <span class="single-meta__color active" data-color="58B2EE"><i></i></span>
+                            <span class="single-meta__color" data-color="8858EE"><i></i></span>
+                            <span class="single-meta__color" data-color="FF2727"><i></i></span>
+                          </div>
+                        </div>
+                        <div class="catalog-item__drop_container">
+                          <span class="single-meta__color-block_title">Выберите комплект</span>
+                          <div class="single-meta__drop catalog-item__drop">
+                            <span class="single-meta__drop_current">Выбор комплектации</span>
+                            <ul class="single-meta__drop_list">
+                              <li>комплект1</li>
+                              <li>комплект2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="catalog-item__block2">
+                      <div class="catalog-item__btns-line">
+                        <span class="single-meta__btn-wish">В избранное</span>
+                        <span class="single-meta__btn-sravnenie">В сравнение</span>
+                      </div>
+                      <div class="catalog-item__price">
+                        <span class="catalog-item__price_current">12 990 ₽</span>
+                        <span class="catalog-item__price_old">19 490 ₽</span>
+                      </div>
+                      <div class="catalog-item__btns">
+                        <span class="btn catalog-item__btn-cart">В корзину</span>
+                        <span class="btn btn--border catalog-item__btn-one">
+                          <span>Купить в 1 клик</span>
+                          <i></i>
+                        </span>
+                        <span class="catalog-item__btn-wish"></span>
+                        <span class="catalog-item__btn-sravnenie"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="wrapper">
+        <div class="section__title">
+          <h2 class="section__title_text">Ответы на часто задаваемые вопросы</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Как подобрать парту?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Как оплатить заказ?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Где узнать размеры?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Как вернуть товар?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Можно ли купить в рассрочку?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__quest">
+              <span>Не могу опустить парту. Что делать?</span>
+              <i class="faq-item__quest_btn"></i>
+            </div>
+            <div class="faq-item__answer">
+              Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="wrapper">
+        <div class="subscribe-wrapper">
+          <img src="images/podpishis.png" alt="" class="subscribe-img">
+          <div class="subscribe-content">
+            <strong class="subscribe-title">Подпишитесь на нашу рассылку и получайте бонусы!</strong>
+            <span class="subscribe-text">Для всех подписчиков действуют премиальные скидки и закрытые распродажи!
+              Мы не спамим и отправляем всего по 1 письму в неделю!</span>
+            <form action="" class="subscribe-form">
+              <input type="email" class="input subscribe-form__input" placeholder="Введите ваш e-mail">
+              <input type="submit" value="Подписаться" class="submit btn subscribe-form__submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section address">
+      <div class="wrapper">
+        <div class="section__title">
+          <h2 class="section__title_text">Адрес и контакты</h2>
+        </div>
+        <div class="address-content">
+          <div class="address-plash">
+            <strong class="address-plash__title">ООО “ТД РиФ”</strong>
+            <span class="address-plash__text">г. Москва, Старопетровский проезд 7А строение 6</span>
+            <div class="address-plash__phones">
+              <a href="tel:+7 800 256 66 66">+7 800 256 66 66</a> <br>
+              <a href="tel:+7 495 255 44 11">+7 495 255 44 11</a>
+            </div>
+            <a href="mailto:hello@detskaya-parta.ru" class="address-plash__email">hello@detskaya-parta.ru</a>
+            <div class="socials address-socials">
+              <a href="" class="socials-item"><img src="images/icons.svg#instagram" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#twitter" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#facebook" alt=""></a>
+            </div>
+          </div>
+          <div class="address-map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="wrapper">
+        <div class="footer-top__wrapper flex">
+          <div class="footer-logo_block">
+            <a href="" class="logo footer-logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
+            <span class="footer-logo_block__text">Детские парты-трансформеры, стулья и модульная мебель</span>
+            <div class="footer-pays">
+              <img src="images/icons.svg#mastercard" alt="" width="32" height="26" class="footer-pay">
+              <img src="images/icons.svg#visa" alt="" width="49" height="17" class="footer-pay">
+              <img src="images/icons.svg#paypal" alt="" width="67" height="16" class="footer-pay">
+              <img src="images/icons.svg#yandex" alt="" width="78" height="14" class="footer-pay">
+              <img src="images/icons.svg#sber" alt="" width="80" height="13" class="footer-pay">
+            </div>
+            <div class="footer-rating">
+              <strong class="footer-rating__title">Рейтинг магазина</strong>
+              <div class="rating footer-rating__flex">
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <i class="rating-star rating-star--full"></i>
+                <span>1590 отзывов</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-block footer-block--menu">
+            <strong class="footer-block__title">Бренды</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Holto-6</a></li>
+              <li class="footer-menu__item"><a href="">Rifforma</a></li>
+              <li class="footer-menu__item"><a href="">Duoback</a></li>
+              <li class="footer-menu__item"><a href="">Ergo-BABO</a></li>
+              <li class="footer-menu__item"><a href="">Mealux</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block footer-block--menu">
+            <strong class="footer-block__title">Мебель</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Парты</a></li>
+              <li class="footer-menu__item"><a href="">Комплекты</a></li>
+              <li class="footer-menu__item"><a href="">Столы</a></li>
+              <li class="footer-menu__item"><a href="">Кресла</a></li>
+              <li class="footer-menu__item"><a href="">Стулья</a></li>
+              <li class="footer-menu__item"><a href="">Аксессуары</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block footer-block--menu">
+            <strong class="footer-block__title">Помощь</strong>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Доставка</a></li>
+              <li class="footer-menu__item"><a href="">Оплата</a></li>
+              <li class="footer-menu__item"><a href="">Возврат</a></li>
+              <li class="footer-menu__item"><a href="">Гарантии</a></li>
+              <li class="footer-menu__item"><a href="">Инструкции</a></li>
+              <li class="footer-menu__item"><a href="">Отзывы</a></li>
+              <li class="footer-menu__item"><a href="">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <strong class="footer-block__title">Контакты</strong>
+            <a href="tel:+7 800 236 55 55" class="footer-block__text">+7 800 236 55 55</a> <br>
+            <a href="tel:+7 495 255 55 44" class="footer-block__text">+7 495 255 55 44</a> <br>
+            <a href="mailto:hello@detskaya-parta.ru" class="footer-block__text">hello@detskaya-parta.ru</a> <br>
+            <span class="footer-block__text">Работаем: <br> 8:00 - 21:00</span>
+            <div class="socials footer-socials">
+              <a href="" class="socials-item"><img src="images/icons.svg#instagram" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#twitter" alt=""></a>
+              <a href="" class="socials-item"><img src="images/icons.svg#facebook" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <div class="footer-bottom__wrapper flex">
+          <span class="footer-bottom__text">Детская Парта © 2020 Все права защищены.</span>
+          <span class="footer-bottom__text">ИНН 856451256, ОГРНИП: 45687952666</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/nouislider/nouislider.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
