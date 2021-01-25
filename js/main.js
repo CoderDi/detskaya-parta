@@ -75,20 +75,22 @@ $(document).ready(function(){
   });
 
   function restructureReviews() { 
-    if ((window.innerWidth <= 768)&($(".section.reviews").length)) {
-      $(".review").each(function(){
-        $(this).find(".rating").appendTo($(this).find(".review-link__container"));
-        var h = $(this).find(".review-content").outerHeight();
-        if (h > 200) {
-          $(this).find(".review-content").addClass("active");
-        } else {
-          $(this).find(".review-content").removeClass("active");
-        }    
-      });
-    } else {
-      $(".review").each(function(){
-        $(this).find(".rating").appendTo($(this).find(".review-top"));
-      });
+    if ($(".section.reviews").length) {
+      if (window.innerWidth <= 768) {
+        $(".review").each(function(){
+          $(this).find(".rating").appendTo($(this).find(".review-link__container"));
+          var h = $(this).find(".review-content").outerHeight();
+          if (h > 200) {
+            $(this).find(".review-content").addClass("active");
+          } else {
+            $(this).find(".review-content").removeClass("active");
+          }    
+        });
+      } else {
+        $(".review").each(function(){
+          $(this).find(".rating").appendTo($(this).find(".review-top"));
+        });
+      }
     }
   }  
 
@@ -232,10 +234,12 @@ $(document).ready(function(){
   });
 
   $(document).scroll(function(){
-    if ($(this).scrollTop() > $("#single").offset().top) {
-      $(".single-fixed").addClass("active");
-    } else {
-      $(".single-fixed").removeClass("active");
+    if ($("#single").length > 0) {
+      if ($(this).scrollTop() > $("#single").offset().top) {
+        $(".single-fixed").addClass("active");
+      } else {
+        $(".single-fixed").removeClass("active");
+      }
     }
   });
 
@@ -279,9 +283,36 @@ $(document).ready(function(){
     });
   }
 
+  function suffix(i){
+    var suff = "";
+    if ((i > 1)&(i < 5)) {
+      suff = "а"
+    } else if (i > 4) {
+      suff = "ов"
+    }
+    return suff;
+  }
+  $(".js-filter-form input").change(function(){
+    var count = $(".js-filter-form").find(':checkbox:checked').length;
+    if (count > 0) {
+      $(".js-filter-reset").show();
+      $(".js-filter-submit").addClass("active").text(count + " фильтр" + suffix(count));
+    } else {
+      $(".js-filter-reset").hide();
+      $(".js-filter-submit").removeClass("active").text("Применить фильтры");
+    }  
+  });
+  $(".js-filter-reset").click(function(){
+    $(this).hide();
+    $(".js-filter-submit").removeClass("active").text("Применить фильтры");
+    $(".js-filter-form").find(':checkbox:checked').prop('checked', false);
+  });
 
-
-
+  $(".js-set-review").click(function(){
+    $('.js-review-form').show();
+    $("html, body").animate({scrollTop: $('.js-review-form').offset().top});
+    
+  });
 
 
 

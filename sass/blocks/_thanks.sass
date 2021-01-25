@@ -152,7 +152,6 @@
       flex-grow: 2
       margin-right: 15px
 
-
 .content
   font-weight: normal
   font-size: 16px
@@ -280,7 +279,120 @@
             background: #181A34
             color: #ffffff
 
+.podbor
+  margin-bottom: 70px
+  &-text
+    font-weight: normal
+    font-size: 16px
+    line-height: 23px
+    color: #525E6A
+    margin: 0 0 30px
+  &__item
+    margin-bottom: 20px
+    &_title
+      display: block
+      margin-bottom: 15px
+      font-weight: 500
+      font-size: 20px
+      line-height: 29px
+      color: #181A34
+    &_list
+      display: flex
+      flex-wrap: wrap
+    &_btn
+      flex-shrink: 0
+      margin-bottom: 20px
+      span
+        width: 120px
+        min-width: 0
+  &-submit
+    width: 220px
+    height: 56px
+  &-btn-change
+    margin-top: 40px
+    padding: 16px 37px
+    border: 1px solid #525E6A
+    box-sizing: border-box
+    border-radius: 3px
+    cursor: pointer
+    font-weight: 600
+    font-size: 16px
+    line-height: 23px
+    text-align: center
+    color: #525E6A 
+    background: none
+    &:hover
+      background: #525e6a
+      color: #ffffff
 
+.reviews
+  &-page
+    .catalog-container
+      margin: 0
+    &__title
+      margin-bottom: 25px
+  &-form
+    display: none
+    margin-bottom: 70px
+    &__title
+      margin: 0 0 25px
+      font-weight: 600
+      font-size: 24px
+      line-height: 35px
+      color: #181A34
+    &__input
+      max-width: 310px
+      margin-bottom: 20px
+      height: 56px
+    &__textarea
+      resize: vertical
+      min-height: 56px
+      margin-bottom: 20px
+      padding-top: 15px
+    &__flex
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+    &__submit
+      width: 310px
+      height: 56px
+      margin: 5px 30px 0 0
+    &__check
+      margin-top: 5px
+
+.pagination
+  display: flex
+  align-items: center
+  &__link
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    width: 50px
+    height: 40px
+    margin-right: 10px
+    border: 1px solid #525E6A
+    box-sizing: border-box
+    border-radius: 3px
+    font-weight: 500
+    font-size: 16px
+    text-align: center
+    color: #525E6A
+    cursor: pointer
+    &.active, &:hover
+      color: #181A34
+      border-color: #181A34
+    &_next
+      width: 105px
+      i
+        position: relative
+        top: 1px
+        margin-left: 8px
+        display: inline-block
+        width: 12px
+        height: 12px
+        background: url(../images/icons.svg#caret-right) no-repeat center
+        background-size: 12px 12px
 
 
 

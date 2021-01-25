@@ -391,6 +391,13 @@
     </g>
   </svg>
 
+  <svg viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="check-filter" class="img">
+      <path d="M9.8125 0.9375L3.6875 7.06223L0.625 4" stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+
 
 
 

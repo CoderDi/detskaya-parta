@@ -2,6 +2,7 @@
   margin: 45px 0
   &-container
     display: flex
+    align-items: flex-start
     margin-top: 50px
   &-filter
     width: 250px
@@ -36,8 +37,27 @@
       .check-text
         font-size: 14px
         line-height: 18px
+      input:checked ~ span,
+      input:checked ~ span *
+        color: #0066FF
+      input:checked ~ .check-custom
+        border-color: #0066FF
+        &::after
+          background: url(../images/icons.svg#check-filter) no-repeat center
+          background-size: 12px 8px
     &__form
       display: block
+      &-reset
+        display: none
+        width: 100%
+        text-align: center
+        font-weight: normal
+        font-size: 12px
+        line-height: 17px
+        color: #525E6A
+        cursor: pointer
+        &:hover
+          text-decoration: underline
       &_submit
         display: flex
         width: 100%
@@ -54,6 +74,11 @@
         text-align: center
         color: #525E6A
         background: none
+        &.active
+          background: #0066FF
+          border-color: #0066FF
+          color: #ffffff
+          margin-bottom: 10px
         &:hover
           background: #525E6A
           color: #ffffff

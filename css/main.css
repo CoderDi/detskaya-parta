@@ -2210,7 +2210,6 @@ body {
 .review-img {
   padding-left: 14px;
   height: 155px;
-  width: 33.333%;
 }
 
 .review-img img {
@@ -2234,6 +2233,45 @@ body {
 
 .review-text b {
   font-weight: 600;
+}
+
+.review-page {
+  margin-bottom: 50px;
+}
+
+.review-page-content-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 10px 0 15px;
+}
+
+.review-page .review-content {
+  padding: 0;
+}
+
+.review-page .review-link {
+  margin: 0;
+}
+
+.review-page .review-rating {
+  margin: 0 25px 0 35px;
+}
+
+.review-page-date {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .brand {
@@ -4272,6 +4310,11 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 50px;
 }
 
@@ -4329,8 +4372,38 @@ body {
   line-height: 18px;
 }
 
+.catalog-filter__check input:checked ~ span,
+.catalog-filter__check input:checked ~ span * {
+  color: #0066FF;
+}
+
+.catalog-filter__check input:checked ~ .check-custom {
+  border-color: #0066FF;
+}
+
+.catalog-filter__check input:checked ~ .check-custom::after {
+  background: url(../images/icons.svg#check-filter) no-repeat center;
+  -webkit-background-size: 12px 8px;
+          background-size: 12px 8px;
+}
+
 .catalog-filter__form {
   display: block;
+}
+
+.catalog-filter__form-reset {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #525E6A;
+  cursor: pointer;
+}
+
+.catalog-filter__form-reset:hover {
+  text-decoration: underline;
 }
 
 .catalog-filter__form_submit {
@@ -4364,6 +4437,13 @@ body {
   text-align: center;
   color: #525E6A;
   background: none;
+}
+
+.catalog-filter__form_submit.active {
+  background: #0066FF;
+  border-color: #0066FF;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .catalog-filter__form_submit:hover {
@@ -5441,6 +5521,211 @@ body {
 .instruction-filter__item_btn_custom:hover, .instruction-filter__item_btn_custom.active {
   background: #181A34;
   color: #ffffff;
+}
+
+.podbor {
+  margin-bottom: 70px;
+}
+
+.podbor-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #525E6A;
+  margin: 0 0 30px;
+}
+
+.podbor__item {
+  margin-bottom: 20px;
+}
+
+.podbor__item_title {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #181A34;
+}
+
+.podbor__item_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.podbor__item_btn {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.podbor__item_btn span {
+  width: 120px;
+  min-width: 0;
+}
+
+.podbor-submit {
+  width: 220px;
+  height: 56px;
+}
+
+.podbor-btn-change {
+  margin-top: 40px;
+  padding: 16px 37px;
+  border: 1px solid #525E6A;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #525E6A;
+  background: none;
+}
+
+.podbor-btn-change:hover {
+  background: #525e6a;
+  color: #ffffff;
+}
+
+.reviews-page .catalog-container {
+  margin: 0;
+}
+
+.reviews-page__title {
+  margin-bottom: 25px;
+}
+
+.reviews-form {
+  display: none;
+  margin-bottom: 70px;
+}
+
+.reviews-form__title {
+  margin: 0 0 25px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #181A34;
+}
+
+.reviews-form__input {
+  max-width: 310px;
+  margin-bottom: 20px;
+  height: 56px;
+}
+
+.reviews-form__textarea {
+  resize: vertical;
+  min-height: 56px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.reviews-form__flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.reviews-form__submit {
+  width: 310px;
+  height: 56px;
+  margin: 5px 30px 0 0;
+}
+
+.reviews-form__check {
+  margin-top: 5px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #525E6A;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #525E6A;
+  cursor: pointer;
+}
+
+.pagination__link.active, .pagination__link:hover {
+  color: #181A34;
+  border-color: #181A34;
+}
+
+.pagination__link_next {
+  width: 105px;
+}
+
+.pagination__link_next i {
+  position: relative;
+  top: 1px;
+  margin-left: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/icons.svg#caret-right) no-repeat center;
+  -webkit-background-size: 12px 12px;
+          background-size: 12px 12px;
 }
 
 .footer {
