@@ -315,6 +315,14 @@ $(document).ready(function(){
   });
 
 
+  $(".js-compare-remove-item").click(function(){
+    var n = $('.compare-item').index($(this).parents(".compare-item"));
+    
+    $(this).parents(".compare-item").remove();
+    $(".compare-table__row_td:nth-child(" + (n + 2) + ")").remove();
+  });
+
+
 
 
   $("a[href^='#']").click(function(){
