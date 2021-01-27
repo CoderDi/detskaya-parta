@@ -83,18 +83,45 @@
       margin-bottom: 30px
     &__delivery
       display: inline-block
-      background: #181A34
-      border-radius: 5px
-      padding: 25px
+      padding: 25px 0
       &_line
+        position: relative
         display: block
-        margin-bottom: 50px
+        margin-bottom: 20px
         font-weight: normal
         font-size: 20px
         line-height: 29px
-        color: #FFFFFF
+        color: #181A34
+        padding-left: 47px
+        &::before
+          position: absolute
+          content: ''
+          width: 32px
+          height: 32px
+          left: 0
+          top: -1px
+          background: url(../images/icons.svg#package-black) no-repeat center
+          background-size: contain
+        &2::before
+          background: url(../images/icons.svg#truck-black) no-repeat center
+          background-size: contain
         b
           font-weight: 600
+        a
+          color: #0066ff
+        span
+          width: 100%
+          display: block
+          padding-top: 5px
+          font-weight: normal
+          font-size: 18px
+          line-height: 26px
+          color: #525E6A
+        img
+          display: inline-block
+          margin-right: 15px
+          height: 32px
+          width: 32px
         .underline
           text-decoration: underline
           cursor: pointer

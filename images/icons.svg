@@ -13,6 +13,14 @@
     </g>
   </svg>
 
+  <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="mappin-green" class="img">
+      <path d="M17 18.0625C19.3472 18.0625 21.25 16.1597 21.25 13.8125C21.25 11.4653 19.3472 9.5625 17 9.5625C14.6528 9.5625 12.75 11.4653 12.75 13.8125C12.75 16.1597 14.6528 18.0625 17 18.0625Z" stroke="#2CCC59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M27.625 13.8125C27.625 23.375 17 30.8125 17 30.8125C17 30.8125 6.375 23.375 6.375 13.8125C6.375 10.9946 7.49442 8.29206 9.48699 6.29949C11.4796 4.30692 14.1821 3.1875 17 3.1875C19.8179 3.1875 22.5204 4.30692 24.513 6.29949C26.5056 8.29206 27.625 10.9946 27.625 13.8125V13.8125Z" stroke="#2CCC59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+
   <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="caretdown" class="img">
       <path d="M8.125 3.75L5 6.875L1.875 3.75" stroke="#181A34" stroke-linecap="round" stroke-linejoin="round"/>
@@ -361,6 +369,29 @@
       <path d="M24.8928 20.8843V14.1343L11.8457 6.84406" stroke="#0066FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </svg>
+
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="package-black" class="img">
+      <path d="M16.119 16L15.9863 28.8513" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M27.4863 21.9165V10.0835C27.4863 9.90638 27.4393 9.73246 27.3501 9.57951C27.2608 9.42655 27.1326 9.30004 26.9784 9.2129L16.4784 3.27812C16.3283 3.19327 16.1588 3.14868 15.9863 3.14868C15.8139 3.14868 15.6444 3.19327 15.4943 3.27812L4.99427 9.2129C4.8401 9.30004 4.71184 9.42655 4.6226 9.57951C4.53335 9.73246 4.48633 9.90638 4.48633 10.0835V21.9165C4.48633 22.0936 4.53335 22.2675 4.6226 22.4205C4.71184 22.5734 4.8401 22.7 4.99427 22.7871L15.4943 28.7219C15.6444 28.8067 15.8139 28.8513 15.9863 28.8513C16.1588 28.8513 16.3283 28.8067 16.4784 28.7219L26.9784 22.7871C27.1326 22.7 27.2608 22.5734 27.3501 22.4205C27.4393 22.2675 27.4863 22.0936 27.4863 21.9165V21.9165Z" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M27.3483 9.5784L16.1179 16L4.62305 9.57703" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.1286 18.5639V12.5639L10.5312 6.08362" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="truck-black" class="img">
+      <path d="M30 15H22V10H27.323C27.5228 10 27.7181 10.0599 27.8836 10.1719C28.0491 10.284 28.1772 10.443 28.2514 10.6286L30 15Z" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 18H22" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.5 27C25.1569 27 26.5 25.6569 26.5 24C26.5 22.3431 25.1569 21 23.5 21C21.8431 21 20.5 22.3431 20.5 24C20.5 25.6569 21.8431 27 23.5 27Z" stroke="#181A34" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M8.5 27C10.1569 27 11.5 25.6569 11.5 24C11.5 22.3431 10.1569 21 8.5 21C6.84315 21 5.5 22.3431 5.5 24C5.5 25.6569 6.84315 27 8.5 27Z" stroke="#181A34" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M20.5 24H11.5" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5.5 24H3C2.73478 24 2.48043 23.8946 2.29289 23.7071C2.10536 23.5196 2 23.2652 2 23V9C2 8.73478 2.10536 8.48043 2.29289 8.29289C2.48043 8.10536 2.73478 8 3 8H22V21.4019" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 21.4019V15H30V23C30 23.2652 29.8946 23.5196 29.7071 23.7071C29.5196 23.8946 29.2652 24 29 24H26.5" stroke="#181A34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+
 
   <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="gear" class="img">
