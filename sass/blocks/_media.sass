@@ -20,7 +20,26 @@
         &:hover
           background: url(../images/icons.svg#click-hover) no-repeat center, #2CCC59
           background-size: 20px 20px
-
+  .single
+    &-fixed
+      &__wrapper
+        height: 60px
+      &__title
+        margin: 0 10px
+        font-size: 14px
+        line-height: 18px
+      &__phones
+        display: none
+      &__btn
+        margin: 0 0 0 10px
+        height: 39px
+        width: 120px
+      &__price
+        &_current
+          font-size: 18px
+          white-space: nowrap
+        &_old
+          white-space: nowrap
 
 
 @media screen and (max-width: 1170px)
@@ -98,6 +117,47 @@
         position: static
         width: 100%
         margin-top: 20px
+  .single
+    &-preim
+      &__container
+        overflow: hidden
+        overflow-x: scroll
+      &__item
+        width: 280px
+        flex-shrink: 0
+    &-slider
+      &__nav, &__nav_item_container
+        height: 100px
+    &-meta
+      &__btn
+        &-one-click
+          width: 100%
+          margin: 0 0 15px
+        &-rassrochka
+          width: 100%
+    &-tabs
+      &__btn
+        margin-right: 30px
+        &s
+          overflow: hidden
+          overflow-x: scroll
+          padding-bottom: 15px
+          &_container
+            height: 33px
+            overflow: hidden
+            border-bottom: 1px solid #EBEBF0
+  .main
+    &-title
+      display: block
+      &__text
+        margin-bottom: 20px
+  .checkout
+    &-form
+      flex-wrap: wrap
+      justify-content: flex-end
+    &-slider
+      width: 100%
+      margin-bottom: 25px
 
 @media screen and (max-width: 980px)
   .header
@@ -200,7 +260,44 @@
     &-block
       &--menu
         display: none 
-
+  .main
+    margin: 0
+  .breadcrumbs
+    margin-bottom: 15px
+  .single
+    &__artikul, &-socials
+      display: none
+    &-top
+      display: block
+    &-sliders, &-meta
+      width: 100%
+      margin: 0 auto
+      max-width: 500px
+    &-popup
+      .wrapper
+        padding: 0
+      &__title
+        font-size: 24px
+        line-height: 28px
+        margin-bottom: 15px
+      &__img
+        margin: 15px 0
+  .popup
+    &-block
+      padding: 20px
+    &-close
+      width: 30px
+      height: 30px
+      top: 10px
+      right: 10px
+      &::before
+        width: 20px
+        left: 5px
+        top: 14px
+      &::after
+        top: 5px
+        left: 14px
+        height: 20px
 
 @media screen and (max-width: 768px)
   .header
@@ -426,7 +523,156 @@
   .main
     &-title
       margin-bottom: 20px
-
+  .single
+    &-fixed
+      &__title
+        display: none
+      &__price
+        justify-content: flex-end
+        flex-grow: 2
+    &-top
+      &--mobile
+        display: flex
+        &__rating
+          margin-bottom: 20px
+          span
+            padding-left: 10px
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #525E6A
+    &-slider
+      &__for
+        height: 340px
+        padding-bottom: 60px
+        margin-bottom: 15px
+        &_item_container
+          height: 280px
+      &__nav
+        height: 80px
+        &_item
+          padding: 0 5px
+          &_container
+            height: 80px
+    &-labels
+      bottom: 0
+      left: 0
+      top: auto
+      right: auto
+      flex-direction: row
+      flex-wrap: wrap
+      max-width: 240px
+      .item-label
+        margin: 10px 10px 0 0
+    &-meta
+      &__pay
+        width: 100%
+        &--mobile
+          display: flex
+          justify-content: flex-start
+          margin: 25px 0 35px
+        .single-meta__status, .rating
+          display: none
+      &__flex
+        display: block
+      &__set
+        width: 100%
+        padding: 0
+        margin-bottom: 25px
+      &__btn
+        &-rassrochka
+          height: 40px
+          border: 1px solid #FF2727
+          color: #FF2727
+        &s
+          .single-meta__btn-wish, .single-meta__btn-sravnenie
+            display: none
+      &__delivery
+        padding: 0
+    &-tab
+      &__container
+        display: none
+      &__read-more
+        margin-top: -10px
+        display: block
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        color: #181A34
+        span:nth-child(2)
+          display: none
+        &.active
+          span:nth-child(2)
+            display: block
+          span:nth-child(1)
+            display: none
+      &__list
+        flex-wrap: nowrap
+        &_container
+          overflow: hidden
+          overflow-x: scroll
+        &_item
+          width: 250px
+          padding: 0 8px
+          flex-shrink: 0
+          &_img
+            height: 200px
+    &-how
+      &__img
+        display: block
+        max-width: 100%
+        height: auto
+    &-popup
+      table
+        th, td
+          padding: 5px 10px
+          font-size: 14px
+  .checkout
+    &-form
+      margin: 0 -15px
+      width: auto
+    &-slide
+      padding: 0
+      &__prev
+        white-space: nowrap
+      &__title
+        display: none
+      &r
+        padding: 20px 15px
+      &__flex
+        display: block
+        max-width: 400px
+        margin: 0 auto
+        &_item
+          width: 100%
+          padding: 10px
+          margin-bottom: 10px
+          &_top
+            display: flex
+            align-items: center
+            justify-content: center
+          &_img
+            margin: 0 10px 0 0
+            width: 40px
+            height: 40px
+          &_title
+            margin: 0
+            text-align: left
+    .cart-aside
+      margin: 0 auto
+    &-personal
+      &__form
+        max-width: 400px
+        margin: 0 auto
+      &__input
+        width: 100%
+        margin-bottom: 15px
+      &__btn
+        width: 100%
+    &-check
+      margin: 15px
+      width: 100%
+    
 
 @media screen and (max-width: 480px)
   .item
@@ -487,7 +733,39 @@
         padding: 0 25px
       &__wrapper
         padding: 20px 0 30px
-
+  .single
+    &-fixed
+      &__price
+        display: block
+        text-align: right
+        &_current
+          margin: 0
+        &_old
+          display: inline-block
+    &-tabs
+      &__content
+        table td
+          padding: 5px 10px
+          font-size: 14px
+          height: auto
+  .checkout
+    &-slide
+      &__footer
+        display: block
+      &__prev
+        margin: 0 auto 15px
+    &-step
+      &s
+        position: absolute
+        left: 0
+        transition: .2s
+        width: 600px
+        &__container
+          position: relative
+          overflow: hidden
+          height: 30px
+      &__grow
+        margin: 0 15px
 
 @media screen and (max-width: 375px)
   .header

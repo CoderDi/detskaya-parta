@@ -81,20 +81,22 @@
       <div class="wrapper">
         <div class="main-title flex">
           <h2 class="main-title__text">Оформление заказа</h2>
-          <div class="checkout-steps flex">
-            <div class="checkout-step checkout-step1 active">
-              <span class="checkout-step__num">1</span>
-              <span class="checkout-step__text">Личные данные</span>
-            </div>
-            <i class="grow checkout-step__grow"></i>
-            <div class="checkout-step checkout-step2">
-              <span class="checkout-step__num">2</span>
-              <span class="checkout-step__text">Доставка</span>
-            </div>
-            <i class="grow checkout-step__grow"></i>
-            <div class="checkout-step checkout-step3">
-              <span class="checkout-step__num">3</span>
-              <span class="checkout-step__text">Оплата</span>
+          <div class="checkout-steps__container">
+            <div class="checkout-steps flex">
+              <div class="checkout-step checkout-step1 active">
+                <span class="checkout-step__num">1</span>
+                <span class="checkout-step__text">Личные данные</span>
+              </div>
+              <i class="grow checkout-step__grow"></i>
+              <div class="checkout-step checkout-step2">
+                <span class="checkout-step__num">2</span>
+                <span class="checkout-step__text">Доставка</span>
+              </div>
+              <i class="grow checkout-step__grow"></i>
+              <div class="checkout-step checkout-step3">
+                <span class="checkout-step__num">3</span>
+                <span class="checkout-step__text">Оплата</span>
+              </div>
             </div>
           </div>
         </div>
@@ -109,8 +111,8 @@
               <div class="checkout-slide__content">
                 <div class="checkout-personal__form">
                   <input type="tel" class="input checkout-personal__input" placeholder="Номер телефона">
-                  <input type="text" class="input checkout-personal__input" placeholder="Имя">
-                  <input type="text" class="input checkout-personal__input" placeholder="Фамилия">
+                  <input type="text" class="input input--only-buk checkout-personal__input" placeholder="Имя">
+                  <input type="text" class="input input--only-buk checkout-personal__input" placeholder="Фамилия">
                   <span class="btn checkout-personal__btn js-checkout-next" data-next="2">Дальше</span>
                   <label class="check checkout-check">
                     <input type="checkbox" checked>
@@ -130,18 +132,24 @@
               <div class="checkout-slide__content">
                 <div class="checkout-slide__flex">
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#storefront" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">Самовывоз</b>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#storefront" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">Самовывоз</b>
+                    </div>
                     <span class="checkout-slide__flex_item_text">г. Москва, Старопетровский проезд 7А строение 6</span>
                   </div>
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#car" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">Доставка по МСК</b>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#car" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">Доставка по МСК</b>
+                    </div>
                     <span class="checkout-slide__flex_item_text">Дата доставки: 31.12.2020 <br> Цена: 659 ₽</span>
                   </div>
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#truck" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">Доставка по РФ</b>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#truck" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">Доставка по РФ</b>
+                    </div>
                     <span class="checkout-slide__flex_item_text">3-4 недели <br> <a href="">Рассчитать стоимость</a></span>
                   </div>
                 </div>
@@ -162,19 +170,29 @@
               <div class="checkout-slide__content">
                 <div class="checkout-slide__flex">
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#money" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">Наличными при получении</b>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#money" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">Наличными при получении</b>
+                    </div>
                     <span class="checkout-slide__flex_item_text">г. Москва, Старопетровский проезд 7А строение 6</span>
                   </div>
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#credit-card" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">Картой на сайте</b>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#credit-card" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">Картой на сайте</b>
+                    </div>
                     <span class="checkout-slide__flex_item_text">Дата доставки: 31.12.2020 <br> Цена: 659 ₽</span>
                   </div>
                   <div class="checkout-slide__flex_item">
-                    <img src="images/icons.svg#receipt" alt="" class="checkout-slide__flex_item_img">
-                    <b class="checkout-slide__flex_item_title">На расчетный счёт</b>
-                    <span class="checkout-slide__flex_item_text">3-4 недели <br> <a href="" target="_blank">Отправить реквизиты</a></span>
+                    <div class="checkout-slide__flex_item_top">
+                      <img src="images/icons.svg#receipt" alt="" class="checkout-slide__flex_item_img">
+                      <b class="checkout-slide__flex_item_title">На расчетный счёт</b>
+                    </div>
+                    <span class="checkout-slide__flex_item_text">3-4 недели <br> 
+                    <label class="checkout-slide__label">
+                      <input type="file" name="rekvizity">
+                      <span>Отправить реквизиты</span>
+                    </label>
                   </div>
 
                   <textarea name="comment" class="textarea input checkout-slide__flex_textarea" placeholder="Комментарий к заказу"></textarea>

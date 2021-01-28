@@ -324,6 +324,21 @@
   &-slide
     display: none
     padding: 0 15px
+    outline: none
+    &__label
+      display: block
+      text-align: center
+      input
+        display: none
+      span
+        font-weight: normal
+        font-size: 16px
+        line-height: 23px
+        color: #0066FF
+        cursor: pointer
+        text-decoration: underline
+        &:hover
+          text-decoration: none
     &__title
       margin-bottom: 30px
       &_text
@@ -355,7 +370,7 @@
         border-radius: 10px
         text-align: center
         cursor: pointer
-        &:hover
+        &:hover, &.active
           border-color: #2CCC59
         &_img
           display: block
@@ -435,6 +450,7 @@
       font-size: 16px
       line-height: 23px
       color: #B6BFC9
+      white-space: nowrap
 
   
   &-personal
