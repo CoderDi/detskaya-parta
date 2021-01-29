@@ -12,6 +12,10 @@
     box-sizing: border-box
     border-radius: 5px
     padding: 25px
+    &-open__btn
+      display: none
+    &__header
+      display: none
     &__block
       margin-bottom: 25px
       &_title
@@ -149,6 +153,9 @@
       margin: 0
     &__structure
       display: flex
+      align-items: center
+      &--mobile
+        display: none
       &_item
         width: 29px
         height: 29px
@@ -177,6 +184,7 @@
       display: flex
       align-items: center
       justify-content: center
+      height: 300px
       img
         display: block
         max-height: 100%

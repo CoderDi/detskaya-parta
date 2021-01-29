@@ -40,7 +40,24 @@
           white-space: nowrap
         &_old
           white-space: nowrap
-
+  .catalog
+    &-item
+      &.line        
+        .catalog-item__block1
+          width: calc(100% - 271px)
+        .catalog-item__block2
+          width: 270px
+          padding-left: 15px
+          flex-shrink: 0
+        .catalog-item__content
+          justify-content: space-between
+        .catalog-item__block1_flex
+          flex-wrap: wrap
+          justify-content: flex-start
+        .catalog-item__colors
+          margin-right: 10px
+        .catalog-item__drop_container
+          margin: 0 0 13px 0
 
 @media screen and (max-width: 1170px)
   .header
@@ -158,6 +175,135 @@
     &-slider
       width: 100%
       margin-bottom: 25px
+  .catalog
+    &-container
+      display: block
+      position: relative
+    &-filter
+      position: fixed
+      z-index: 90
+      background: #ffffff
+      top: 0
+      right: 0
+      width: 100%
+      max-width: 400px
+      margin: 0
+      border: none
+      border-radius: 0
+      padding: 0
+      opacity: 0
+      visibility: hidden
+      transition: .2s
+      &-open__btn
+        display: block
+        width: 33px
+        height: 33px
+        background: url(../images/icons.svg#sliders) no-repeat center
+        background-size: contain
+      &.active
+        opacity: 1
+        visibility: visible
+      &__form
+        padding: 50px 25px 25px
+        height: 100vh
+        overflow-y: auto
+        &::after
+          display: block
+          height: 25px
+          content: ''
+      &__header
+        display: block
+        position: absolute
+        z-index: 2
+        top: 0
+        left: 0
+        width: 100%
+        height: 40px
+        background: #fff
+        padding: 0 25px
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #EBEBF0
+        span
+          font-size: 18px
+          font-weight: 500
+      &__close
+        position: absolute
+        width: 24px
+        height: 24px
+        border-radius: 100%
+        top: 8px
+        right: 25px
+        transform: rotate(45deg)
+        &::before
+          position: absolute
+          content: ''
+          top: 0
+          height: 100%
+          left: 11px
+          background: #000000
+          border-radius: 2px
+          width: 2px
+        &::after
+          position: absolute
+          content: ''
+          left: 0
+          width: 100%
+          top: 11px
+          background: #000000
+          border-radius: 2px
+          height: 2px
+      &::before
+        position: absolute
+        content: ''
+        width: 100vw
+        height: 100%
+        top: 0
+        right: 100%
+        background: #000
+        opacity: 0.6
+    &-content
+      width: 100%
+      &__structure
+        &--mobile
+          display: block
+          width: 29px
+          height: 29px
+          margin-left: 15px
+          background: url(../images/icons.svg#line) no-repeat center
+          background-size: contain
+          &.line
+            background: url(../images/icons.svg#square) no-repeat center
+            background-size: contain
+        &_item
+          display: none
+  .selected-item
+    width: 33.333%      
+  .reviews
+    &-labels
+      display: block 
+    &-page
+      &__title
+        margin: 0
+        &_container
+          display: flex
+          align-items: center
+          justify-content: space-between
+      &__btn-set
+        display: flex
+  .compare-table__th_title,
+  .compare-table__row_td:first-child
+    width: 200px
+    min-width: 200px
+  .compare-container
+    overflow-x: auto
+    width: 100%
+  .compare-item,
+  .compare-table__row_td
+    min-width: 185px
+
+
+
 
 @media screen and (max-width: 980px)
   .header
@@ -298,6 +444,53 @@
         top: 5px
         left: 14px
         height: 20px
+  .catalog
+    margin-top: 15px
+    &-container
+      margin: 0
+    .category__list
+      display: none
+    &-item
+      width: 50%
+      &.line
+        .catalog-item__container
+          padding: 15px 15px 0 0
+        .catalog-item__img
+          width: 150px
+          margin-right: 15px
+  .thanks
+    &-top
+      flex-wrap: wrap
+      &__img
+        width: 100%
+        max-width: 400px
+        order: -1
+        margin: 0 auto 35px
+        img
+          display: block
+          width: 100%
+          height: auto
+          position: static
+      &__content
+        padding: 0
+    &-table
+      margin-top: 40px
+      &__item
+        padding: 15px 15px 15px 0
+        &_img
+          width: 150px
+          height: 120px
+          margin: 0
+        &_block
+          margin-left: 25px
+  .selected
+    &-container
+      border-top: 1px solid #EBEBF0
+      border-left: 1px solid #EBEBF0
+      margin: 0 -15px
+    &-item
+      margin: 0
+
 
 @media screen and (max-width: 768px)
   .header
@@ -672,7 +865,207 @@
     &-check
       margin: 15px
       width: 100%
-    
+  .catalog
+    &-item
+      &__status
+        display: none
+      &__img
+        height: 190px
+        padding: 15px 0
+      &__label
+        &-full
+          display: none
+        &s
+          .item-label
+            margin: 0 5px 5px 0
+            font-size: 12px
+            line-height: 17px
+            padding: 1px 10px
+            display: none
+            &--new
+              display: block
+      &__title
+        font-size: 14px
+        margin-bottom: 10px
+        line-height: 20px
+      &__rating
+        margin-bottom: 10px
+        flex-wrap: wrap
+        .rating-star
+          width: 12px
+          height: 12px
+          margin: 0 5px 5px 0
+        span
+          margin-left: 3px
+          margin-bottom: 5px
+          font-size: 12px
+          line-height: 17px
+      &__colors
+        .single-meta__color
+          width: 24px
+          height: 24px
+          margin-right: 0 8px 8px 0
+          i
+            width: 16px
+            height: 16px
+      .single-meta__color-block_title
+        font-size: 12px
+        line-height: 17px
+        margin-bottom: 5px
+      &__drop
+        max-width: 100%
+        margin-bottom: 20px
+        &_container
+          .single-meta__color-block_title
+            display: block
+          .single-meta__drop_current,
+          .single-meta__drop_list li
+            font-size: 12px
+            line-height: 17px
+            padding: 0 10px
+            height: 36px
+            display: flex
+            align-items: center
+      &__price
+        &_current
+          font-size: 16px
+          line-height: 23px
+        &_old
+          font-size: 14px
+      &__btn
+        &-one
+          width: 40px
+          height: 36px
+          margin-left: 10px
+        &-cart
+          width: calc(100% - 51px)
+          height: 36px
+          font-size: 14px
+        &-wish, &-sravnenie
+          margin-top: 15px
+          border: none
+          width: 20px
+          height: 20px
+          margin-right: 10px
+          background-size: contain
+        &s
+          justify-content: flex-start
+          flex-wrap: wrap
+      &.line
+        .single-meta__color
+          width: 24px
+          height: 24px
+          i
+            width: 16px
+            height: 16px
+        .catalog-item__btn-one 
+          width: 40px
+          height: 36px
+          margin-left: 10px
+          background: url(../images/icons.svg#click) no-repeat center
+          background-size: auto
+          -webkit-background-size: 24px 24px
+          background-size: 24px 24px
+          span
+            display: none
+        .catalog-item__price_current
+          font-size: 16px
+          line-height: 23px
+          margin-bottom: 10px
+        .catalog-item__price_old
+          margin-bottom: 10px
+        .catalog-item__block1,
+        .catalog-item__block2
+          width: 100%
+          padding: 0 0 15px
+        .catalog-item__block1_flex
+          display: block
+  .thanks
+    &-top
+      &__title
+        margin-bottom: 5px
+      &__order-num
+        font-size: 20px
+    &-table
+      margin: 40px -15px 0
+      &__title
+        display: none
+      &__container
+        border-radius: 0
+      &__result
+        padding: 25px 15px
+        font-size: 18px
+        line-height: 26px
+        text-align: center
+      &__item
+        &_content
+          flex-wrap: wrap
+        &_block
+          margin: 0
+          &-title
+            width: 100%
+            margin: 0 0 25px 0
+  .selected
+    &-item
+      width: 50%
+  .review-page
+    &-content__title
+      width: 100%
+      margin-bottom: 10px
+    .review-rating
+      margin: 0 25px 10px 0
+    .review-link
+      margin-bottom: 10px
+  .instruction
+    &-filter
+      margin: 5px 0 10px
+      border: none
+      padding: 0
+      &__item
+        position: relative
+        display: block
+        margin-bottom: 15px
+        border: 1px solid #525E6A
+        box-sizing: border-box
+        border-radius: 3px
+        padding: 0
+        &.active
+          border-radius: 3px 3px 0 0
+        &:nth-child(n)
+          border: 1px solid #525E6A
+        &_title
+          display: flex
+          align-items: center
+          height: 37px
+          padding: 0 15px
+          margin: 0
+          font-weight: 500
+          font-size: 16px
+          line-height: 23px
+        &_list
+          position: absolute
+          z-index: 10
+          left: -1px
+          right: -1px
+          display: none
+          background: #ffffff
+          border-radius: 0 0 3px 3px
+          border: 1px solid #525E6A
+        &_btn
+          display: block
+          margin: 0
+          border-bottom: 1px solid #525E6A
+          &:last-child
+            border: none
+          &_custom
+            border: none
+            margin: 0
+            border-radius: 0
+            height: 37px
+
+
+
+
 
 @media screen and (max-width: 480px)
   .item
@@ -766,6 +1159,88 @@
           height: 30px
       &__grow
         margin: 0 15px
+  .catalog
+    &-item
+      &.line
+        .catalog-item__container
+          display: block
+          padding: 10px
+        .catalog-item__img
+          width: 100%
+          margin: 0
+  .thanks
+    &-table
+      &__item
+        &_link
+          font-size: 16px
+          line-height: 23px
+        &_block
+          &:last-child
+            flex-grow: 2
+            text-align: right
+            order: 3
+          &:nth-child(2)
+            order: 2
+            span
+              font-size: 14px
+              font-weight: 400
+          &:nth-child(3)
+            order: 1
+            span
+              font-size: 14px
+              font-weight: 400
+            &::after
+              display: inline-block
+              margin: 0 5px 0 3px
+              content: 'x'
+          &-caption
+            display: none
+          &-title &-caption
+            display: block
+        &_text
+          font-size: 16px
+          line-height: 28px
+  .selected
+    &-filter
+      margin-bottom: 15px
+      &__check
+        margin-bottom: 10px
+        .check-text
+          font-size: 14px
+          line-height: 20px
+      &__drop
+        margin-right: 20px
+        margin-bottom: 10px
+        width: 100%
+        max-width: 220px
+        .single-meta__drop_current
+          padding: 0 12px
+          font-size: 14px
+          line-height: 20px
+    &-item
+      &__btn
+        font-size: 14px
+        margin: 0
+        height: 36px
+      .btn-unwish
+        width: 40px
+        height: 36px
+        margin-left: 10px
+  .content
+    table
+      margin: 20px 0
+      th, td
+        font-size: 16px
+        line-height: 20px
+        padding: 10px
+  .pagination
+    display: none
+  .reviews-show-more__btn
+    display: flex
+    font-size: 16px
+    width: 100%
+    max-width: 220px
+    margin: 0 auto
 
 @media screen and (max-width: 375px)
   .header
@@ -779,3 +1254,10 @@
     &__img
       width: 120px
       height: 32px
+  .thanks
+    &-table
+      &__item
+        &_img
+          width: 90px
+  .reviews-page__btn-set
+    width: 140px

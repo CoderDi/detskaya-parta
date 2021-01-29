@@ -115,6 +115,7 @@
         font-size: 18px
         line-height: 28px
         color: #181A34
+        white-space: nowrap
 
 .selected
   &-container
@@ -219,6 +220,7 @@
   img
     display: block
     margin: 20px 0 40px
+    width: 100%
     max-width: 710px
     height: auto
     border-radius: 5px
@@ -235,7 +237,7 @@
 
 .instruction
   &-filter
-    margin: 25px 0 30px
+    margin: 10px 0 30px
     padding: 5px 25px
     border: 1px solid #EBEBF0
     box-sizing: border-box
@@ -243,7 +245,7 @@
     display: inline-block
     &__item
       border-bottom: 1px solid #EBEBF0
-      padding: 20px 0
+      padding: 20px 0 10px
       display: flex
       align-items: center
       &:last-child
@@ -255,10 +257,13 @@
         font-size: 20px
         line-height: 29px
         color: #181A34
+        margin-bottom: 10px
       &_list
         display: flex
         align-items: center
+        flex-wrap: wrap
       &_btn
+        margin-bottom: 10px
         input
           display: none
           &:checked ~ .instruction-filter__item_btn_custom
@@ -326,9 +331,15 @@
       color: #ffffff
 
 .reviews
+  &-show-more__btn
+    display: none
+  &-labels
+    display: none
   &-page
     .catalog-container
       margin: 0
+    &__btn-set
+      display: none
     &__title
       margin-bottom: 25px
   &-form

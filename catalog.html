@@ -8,21 +8,125 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- <section class="banner">
+  <header class="header">
+    <div class="header-top">
+      <div class="wrapper">
+        <div class="header-top__wrapper flex">
+          <div class="header-city">
+            <span class="header-city__text js-city-current">г. Москва</span>
+            <div class="header-city__drop">
+              <span class="header-city__drop_text">Ваш город Владивосток, Приморский Край?</span>
+              <span class="btn header-city__drop_btn header-city__drop_btn--yes">Да, верно</span>
+              <span class="header-city__drop_btn btn-black-border header-city__drop_btn--no js-popup-city-open">Нет, другой</span>
+            </div>
+          </div>
+
+          <ul class="header-top__menu flex">
+            <li class="header-top__menu_item"><a href="">Отзывы</a></li>
+            <li class="header-top__menu_item"><a href="">Контакты</a></li>
+            <li class="header-top__menu_item"><a href="">Доставка</a></li>
+            <li class="header-top__menu_item"><a href="">Инструкции</a></li>
+            <li class="header-top__menu_item"><a href="">Гарантия</a></li>
+            <li class="header-top__menu_item"><a href="">Сертификаты</a></li>
+            <li class="header-top__menu_item"><a href="">Условия возврата</a></li>
+            <li class="header-top__menu_item"><a href="">Оплата</a></li>
+            <li class="header-top__menu_item"><a href="">Реквизиты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="header-menu--mobile js-menu-mobile">
+        <div class="header-menu--mobile__list">
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item1.png" alt="">
+            <span>Детские парты и столы</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item2.png" alt="">
+            <span>Стулья и кресла к партам</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item3.png" alt="">
+            <span>Письменные столы</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item4.png" alt="">
+            <span>Стеллажи и модули</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item5.png" alt="">
+            <span>Тумбы к партам</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item6.png" alt="">
+            <span>Светильники настольные</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item7.png" alt="">
+            <span>Аксессуары</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item8.png" alt="">
+            <span>Готовые комплекты</span>
+          </a>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="header-bottom__wrapper flex">
+          <div class="header-butter js-butter"><i></i></div>
+          <a href="" class="logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
+          <span class="header-bottom__address">м. Войковская <br>
+            Старопетровский проезд 7А стр. 6</span>
+          <form action="" class="header-search">
+            <input type="text" class="input header-search__input" placeholder="Искать на сайте">
+            <input type="submit" class="header-search__submit" value="">
+          </form>
+          <span class="header-bottom__grafik">
+            График работы
+            <b>8:00-21:00</b>
+          </span>
+          <div class="header-bottom__phones">
+            <a href="tel:+7 800 236 55 55" class="header-bottom__phone">+7 800 236 55 55</a>
+            <a href="tel:+7 495 255 55 44" class="header-bottom__phone">+7 495 255 55 44</a>
+          </div>
+          <a href="#" class="btn header-bottom__btn js-getcall">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header-menu">
+      <div class="wrapper">
+        <ul class="header-menu__list flex">
+          <li class="header-menu__item"><a href="">Парты</a></li>
+          <li class="header-menu__item"><a href="">Кресла</a></li>
+          <li class="header-menu__item"><a href="">Комплекты</a></li>
+          <li class="header-menu__item"><a href="">Аксессуары</a></li>
+          <li class="header-menu__item"><a href="">Взрослая мебель</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Акции</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Подбор парты и стула</a></li>
+          <li class="header-menu__item header-menu__item--red"><a href="">Видеодемонстрация</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
     <div class="wrapper">
       <div class="banner-slider js-banner-slider">
         <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
         <div class="banner-slider__item"><img src="images/banner.jpg" alt=""></div>
       </div>
     </div>
-  </section> -->
+  </section>
   
   <main class="main">
     <div class="breadcrumbs">
       <div class="wrapper">
         <a href="" class="breadcrumbs-link">Главная</a>
         <a href="" class="breadcrumbs-link">Каталог</a>
-        <a href="" class="breadcrumbs-link">Детские парты</a>
+        <a href="" class="breadcrumbs-link breadcrumbs-current">Детские парты</a>
       </div>
     </div>
 
@@ -89,6 +193,11 @@
         <div class="catalog-container">
           <aside class="catalog-filter">
             <form action="" class="catalog-filter__form  js-filter-form">
+              <div class="catalog-filter__header">
+                <span>Фильтры</span>
+                <i class="catalog-filter__close js-filter-close"></i>
+              </div>
+              
               <div class="catalog-filter__block">
                 <span class="catalog-filter__block_title">Цена</span>
                 <div class="catalog-filter__price">
@@ -294,7 +403,7 @@
               </div>
 
               <button class="catalog-filter__form_submit js-filter-submit">Применить фильтры</button>
-              <span class="catalog-filter__form-reset js-filter-reset">Сбросить фильтры</span>
+              <div class="catalog-filter__form-reset js-filter-reset">Сбросить фильтры</div>
             </form>            
           </aside>
 
@@ -310,6 +419,8 @@
               </div>
 
               <div class="catalog-content__structure">
+                <span class="catalog-filter-open__btn js-filter-open"></span>
+                <span class="catalog-content__structure--mobile js-structure-mobile"></span>
                 <span class="catalog-content__structure_item catalog-content__structure_line js-catalog-structure" data-structure="line">
                   <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M26.6875 16.9375H2.3125C1.6394 16.9375 1.09375 17.4832 1.09375 18.1562V25.4688C1.09375 26.1418 1.6394 26.6875 2.3125 26.6875H26.6875C27.3606 26.6875 27.9062 26.1418 27.9062 25.4688V18.1562C27.9062 17.4832 27.3606 16.9375 26.6875 16.9375Z" stroke="#525E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
