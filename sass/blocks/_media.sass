@@ -980,6 +980,9 @@
           padding: 0 0 15px
         .catalog-item__block1_flex
           display: block
+    &-content
+      &__list
+        margin: 0 -15px
   .thanks
     &-top
       &__title
@@ -1016,11 +1019,65 @@
       margin: 0 25px 10px 0
     .review-link
       margin-bottom: 10px
+  .podbor
+    margin-bottom: 40px
+    &__item
+      position: relative
+      display: block
+      margin-bottom: 15px
+      border: 1px solid #525E6A
+      box-sizing: border-box
+      border-radius: 3px
+      padding: 0
+      width: 100%
+      max-width: 400px
+      &.active
+        border-radius: 3px 3px 0 0
+        .podbor__item_title::after
+          transform: rotate(180deg)
+      &_list
+        position: absolute
+        z-index: 10
+        left: -1px
+        right: -1px
+        display: none
+        background: #ffffff
+        border-radius: 0 0 3px 3px
+        border: 1px solid #525E6A
+      &_title
+        position: relative
+        display: flex
+        align-items: center
+        height: 37px
+        padding: 0 15px
+        margin: 0
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        color: #525E6A
+        width: 100%
+        max-width: 400px
+        &::after
+          position: absolute
+          top: 13px
+          right: 14px
+          content: ''
+          width: 12px
+          height: 12px
+          background: url(../images/icons.svg#caretdown) no-repeat center
+          background-size: contain
+          transition: .2s
+      &_btn
+        span
+          width: 100%
   .instruction
     &-filter
-      margin: 5px 0 10px
+      margin: 5px 0 25px
       border: none
       padding: 0
+      display: block
+      width: 100%
+      max-width: 400px
       &__item
         position: relative
         display: block
@@ -1031,9 +1088,12 @@
         padding: 0
         &.active
           border-radius: 3px 3px 0 0
+          .instruction-filter__item_title::after
+            transform: rotate(180deg)
         &:nth-child(n)
           border: 1px solid #525E6A
         &_title
+          position: relative
           display: flex
           align-items: center
           height: 37px
@@ -1042,6 +1102,19 @@
           font-weight: 500
           font-size: 16px
           line-height: 23px
+          color: #525E6A
+          width: 100%
+          max-width: 400px
+          &::after
+            position: absolute
+            top: 13px
+            right: 14px
+            content: ''
+            width: 12px
+            height: 12px
+            background: url(../images/icons.svg#caretdown) no-repeat center
+            background-size: contain
+            transition: .2s
         &_list
           position: absolute
           z-index: 10
@@ -1062,9 +1135,51 @@
             margin: 0
             border-radius: 0
             height: 37px
-
-
-
+  .popup
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 1.2
+        margin-bottom: 15px
+      &-small
+        max-height: 100vh
+        overflow-y: auto
+    &-input
+      height: 39px
+      margin-bottom: 15px
+    &-city
+      &__item
+        font-size: 16px
+        line-height: 1.2
+        margin-bottom: 10px
+        margin-right: 20px
+    &-addcart
+      &__btn
+        width: 100%
+        max-width: 220px
+        margin: 0 auto 15px
+        &s
+          display: block
+  .reviews
+    &-form
+      &__input
+        width: 100%
+        max-width: 100%
+        margin: 0 0 20px
+  .file
+    &-custom
+      height: 50px
+      width: 50px
+      margin-right: 10px
+      &::before
+        left: 13px
+        top: 23px
+      &::after
+        top: 13px
+        left: 24px
+    input.loaded ~ .file-custom::after
+      top: 11px
+      left: 13px
 
 
 @media screen and (max-width: 480px)
@@ -1241,6 +1356,29 @@
     width: 100%
     max-width: 220px
     margin: 0 auto
+  .popup
+    &-addcart
+      &__block
+        display: block
+      &__img
+        width: 100%
+        height: 120px
+        margin: 0 0 15px 0
+        display: block
+        text-align: center
+        img
+          display: inline-block
+          max-width: 100%
+          max-height: 100%
+          width: auto
+      &__link
+        font-size: 16px
+        line-height: 1.2
+        margin-bottom: 15px
+      &__price
+        text-align: center
+        margin-bottom: 15px
+
 
 @media screen and (max-width: 375px)
   .header

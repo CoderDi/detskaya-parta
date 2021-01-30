@@ -13,13 +13,12 @@
       <div class="wrapper">
         <div class="header-top__wrapper flex">
           <div class="header-city">
-            <span class="header-city__text">г. Москва</span>
-            <ul class="header-city__drop">
-              <li class="header-city__drop_item">г. Москва</li>
-              <li class="header-city__drop_item">г. Санкт-Петербург</li>
-              <li class="header-city__drop_item">г. Новосибирск</li>
-              <li class="header-city__drop_item">г. Владивосток</li>
-            </ul>
+            <span class="header-city__text js-city-current">г. Москва</span>
+            <div class="header-city__drop">
+              <span class="header-city__drop_text">Ваш город Владивосток, Приморский Край?</span>
+              <span class="btn header-city__drop_btn header-city__drop_btn--yes">Да, верно</span>
+              <span class="header-city__drop_btn btn-black-border header-city__drop_btn--no js-popup-city-open">Нет, другой</span>
+            </div>
           </div>
 
           <ul class="header-top__menu flex">
@@ -38,8 +37,45 @@
     </div>
 
     <div class="header-bottom">
+      <div class="header-menu--mobile js-menu-mobile">
+        <div class="header-menu--mobile__list">
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item1.png" alt="">
+            <span>Детские парты и столы</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item2.png" alt="">
+            <span>Стулья и кресла к партам</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item3.png" alt="">
+            <span>Письменные столы</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item4.png" alt="">
+            <span>Стеллажи и модули</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item5.png" alt="">
+            <span>Тумбы к партам</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item6.png" alt="">
+            <span>Светильники настольные</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item7.png" alt="">
+            <span>Аксессуары</span>
+          </a>
+          <a href="" class="header-menu--mobile__item">
+            <img src="images/category-item8.png" alt="">
+            <span>Готовые комплекты</span>
+          </a>
+        </div>
+      </div>
       <div class="wrapper">
         <div class="header-bottom__wrapper flex">
+          <div class="header-butter js-butter"><i></i></div>
           <a href="" class="logo"><img src="images/icons.svg#logo" alt="" class="logo__img"></a>
           <span class="header-bottom__address">м. Войковская <br>
             Старопетровский проезд 7А стр. 6</span>
@@ -120,7 +156,7 @@
             </div>
           </div>
 
-          <!-- <div class="instruction-filter__item">
+          <div class="instruction-filter__item">
             <span class="instruction-filter__item_title">Выберите бренд</span>
             <div class="instruction-filter__item_list">
               <label class="instruction-filter__item_btn">
@@ -178,10 +214,10 @@
                 <span class="instruction-filter__item_btn_custom">96-375e1</span>
               </label>
             </div>
-          </div> -->
+          </div>
         </div>
 
-        <!-- <div class="container news-container js-news-slider">
+        <div class="container news-container js-news-slider">
           <article class="item3">
             <div class="item3-container">
               <div class="item3-img"><img src="images/news1.jpg" alt=""></div>
@@ -229,7 +265,7 @@
               <a href="" class="btn btn--border item3-btn">Подробнее</a>
             </div>
           </article>
-        </div> -->
+        </div>
       </div>
     </section>
 
@@ -348,6 +384,62 @@
     </div>
   </footer>
 
+  <div class="popup" id="popup-call">
+    <div class="popup-bg js-popup-close"></div>
+    <div class="popup-content">
+      <div class="popup-close js-popup-close"></div>
+      <div class="popup-block popup-block-small">
+        <strong class="popup-block__title">Заказать звонок</strong>
+        <form action="" class="popup-form">
+          <input type="tel" class="input popup-input" placeholder="Номер телефона">
+          <input type="submit" value="Заказать звонок" class="btn popup-submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-city">
+    <div class="popup-bg js-popup-close"></div>
+    <div class="popup-content">
+      <div class="popup-close js-popup-close"></div>
+      <div class="popup-block popup-block-small">
+        <strong class="popup-block__title">Укажите свой город</strong>
+        <input type="text" class="input popup-input" placeholder="Введите ваш город (например Санкт-Петербург)">
+        <div class="popup-city__list">
+          <span class="popup-city__item">Москва</span>
+          <span class="popup-city__item">Санкт-Петербург</span>
+          <span class="popup-city__item">Екатеринбург</span>
+          <span class="popup-city__item">Нижний Новгород</span>
+          <span class="popup-city__item">Пермь</span>
+          <span class="popup-city__item">Новосибирск</span>
+          <span class="popup-city__item">Казань</span>
+          <span class="popup-city__item">Челябинск</span>
+          <span class="popup-city__item">Краснодар</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-addcart">
+    <div class="popup-bg js-popup-close"></div>
+    <div class="popup-content">
+      <div class="popup-close js-popup-close"></div>
+      <div class="popup-block popup-block-small">
+        <strong class="popup-block__title tal">Товар успешно добавлен в корзину</strong>
+        <div class="popup-addcart__block">
+          <div class="popup-addcart__img"><img src="images/cart-item.png" alt=""></div>
+          <div class="popup-addcart__content">
+            <a href="" class="popup-addcart__link">Парта растущая RIFFORMA Comfort-34 (голубой). В комплекте стол, стул, не стул</a>
+            <strong class="popup-addcart__price">16 990 ₽</strong>
+            <div class="popup-addcart__btns flex">
+              <span class="btn-black-border popup-addcart__btn js-popup-close">Вернуться к покупкам</span>
+              <a href="cart.html" class="btn popup-addcart__btn">Перейти в корзину</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>

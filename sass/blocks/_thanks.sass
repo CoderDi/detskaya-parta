@@ -343,8 +343,18 @@
     &__title
       margin-bottom: 25px
   &-form
-    display: none
     margin-bottom: 70px
+    &__rating
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      &_title
+        display: block
+        margin-right: 20px
+        font-weight: normal
+        font-size: 18px
+        line-height: 26px
+        color: #A8A8C1
     &__title
       margin: 0 0 25px
       font-weight: 600
@@ -352,14 +362,23 @@
       line-height: 35px
       color: #181A34
     &__input
-      max-width: 310px
+      width: 420px
+      max-width: 50%
       margin-bottom: 20px
+      margin-right: 20px
       height: 56px
+      &--small
+        width: auto
+        max-width: 100%
+        flex-grow: 2
+        margin: 0 0 20px 0
     &__textarea
       resize: vertical
       min-height: 56px
       margin-bottom: 20px
       padding-top: 15px
+      &--big
+        min-height: 100px
     &__flex
       display: flex
       align-items: center
@@ -370,6 +389,82 @@
       margin: 5px 30px 0 0
     &__check
       margin-top: 5px
+
+.set-rating
+  &.active &__star
+    background: url(../images/icons.svg#star-gold) no-repeat center
+    background-size: 20px 20px
+  &__list
+    display: flex
+    align-items: center
+    &:hover .set-rating__star
+      background: url(../images/icons.svg#star-gold) no-repeat center
+      background-size: 20px 20px
+  &__star
+    width: 30px
+    height: 20px
+    flex-shrink: 0
+    background: url(../images/icons.svg#star-gray) no-repeat center
+    background-size: 20px 20px
+    cursor: pointer    
+  .set-rating__star.active ~ .set-rating__star, .set-rating__star:hover ~ .set-rating__star
+    background: url(../images/icons.svg#star-gray) no-repeat center
+    background-size: 20px 20px
+
+
+.file
+  cursor: pointer
+  input
+    display: none
+    &.loaded ~ .file-custom
+      &::before
+        display: none
+      &::after
+        width: 22px
+        height: 15px
+        background: none
+        border-left: 1px solid #0066FF
+        border-bottom: 1px solid #0066FF
+        transform: rotate(-45deg)
+        left: 45px
+        top: 40px
+  &-custom
+    position: relative
+    display: block
+    width: 110px
+    height: 110px
+    margin-right: 15px
+    flex-shrink: 0
+    border: 1px solid #0066FF
+    box-sizing: border-box
+    border-radius: 5px
+    &::before
+      position: absolute
+      content: ''
+      width: 22px
+      height: 1px
+      background: #0066FF
+      left: 43px
+      top: 54px
+    &::after
+      position: absolute
+      content: ''
+      height: 22px
+      width: 1px
+      background: #0066FF
+      top: 43px
+      left: 54px
+  &s
+    margin: 25px 0 20px
+    &__list
+      display: flex
+    &__title
+      display: block
+      margin-bottom: 15px
+      font-weight: 500
+      font-size: 18px
+      line-height: 26px
+      color: #181A34
 
 .pagination
   display: flex
