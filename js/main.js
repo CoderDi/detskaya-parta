@@ -129,6 +129,13 @@ $(document).ready(function(){
   $(".checkout-slide__flex_item").click(function(){
     $(this).parents(".checkout-slide__flex").find(".checkout-slide__flex_item").removeClass("active");
     $(this).addClass("active");
+    if ($(this).data("block") == "delivery") {
+      $(".checkout-delivery-address").show();
+      $(".js-checkout-slider").slick('setPosition');
+    } else if ($(this).hasClass("checkout-slide__flex_item--delivery")) {      
+      $(".checkout-delivery-address").hide();
+      $(".js-checkout-slider").slick('setPosition');
+    }
   });
 
   $(".single-tab__read-more").click(function(){
